@@ -1,6 +1,0 @@
-SEND_EMAIL(email_recipient, subject, message)
-CREATE_CALENDAR_EVENT(date, time, event_name)
-GET_CALENDAR_EVENTS(date)
-CREATE_REMINDER(date, time, text)
-GET_CURRENT_DATE_AND_TIME()
-GOOGLE_SEARCH(search_query)

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cohere-ai": "^5.1.0",
     "langchain": "^0.0.71",
     "openai": "^3.2.1"
   }

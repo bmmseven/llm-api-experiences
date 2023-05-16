@@ -4,7 +4,7 @@ API_SCHEMA: ```typescript
 {schema}
 ```
 
-USER_INSTRUCTIONS: "{instructions}"
+USER_INSTRUCTIONS: "{user_input}"
 
 Your arguments must be plain json provided in a markdown block:
 

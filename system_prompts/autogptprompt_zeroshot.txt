@@ -4,7 +4,11 @@ Commands:
 3. get events for a specific date: get_calendar_events, args: date: <YYYY-MM-DD>
 4. create a reminder for the user: create_reminder, args: date: <YYYY-MM-DD>, time: <HH:mm>, text: <string>
 5. get current date and time: get_current_date_and_time, args: None
-6. search the web for a specific query: google_search, args: search_query: <string>
+6. get current weather for a city, country and today or past date: get_weather, args: city: <string>, country: <string>, date: <YYYY-MM-DD>
+7. get top news headlines for a country in one of the categories (business|entertainment|general|health|science|sports|technology): get_top_news_headlines, args: country: <string>, category: <string>
+8. convert text into speech: convert_text_to_speech, args: text: <string>, languageCode: <string>, ssmlGender: <string>
+9. get current company stock price: get_current_stock_price, args: ticker: <string>
+10. generate an image from a text prompt: generate_image, args: image_prompt <string>
 
 You should only respond in JSON format as described below
 Format: 
@@ -19,3 +23,5 @@ Format:
     "command": {"name": "command name", "args": {"arg name": "value"}},
 }
 Ensure the response can be parsed by Python json.loads
+
+{user_input}
