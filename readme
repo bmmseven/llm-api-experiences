@@ -1,0 +1,5 @@
+## To run the experiments
+
+You must have NodeJS + npm installed in your machine.
+Then run "npm install" to install all dependecies.
+To run the experiments you must run "npm run start"
