@@ -12,6 +12,8 @@ import {
   SystemChatMessage,
   AIChatMessage,
 } from "langchain/schema";
+import dotenv from "dotenv";
+dotenv.config();
 keypress(input);
 // Include list of API commands
 
@@ -54,7 +56,7 @@ const chat = new ChatOpenAI({
   maxTokens: modelMaxTokens,
   maxRetries: 5,
   modelName: modelName,
-  openAIApiKey: "INSERT_OPEN_AI_API_KEY",
+  openAIApiKey: process.env.OPENAI_API_KEY,
 });
 
 //Store system prompts
@@ -104,64 +106,74 @@ fileStream.once("open", async function (fd) {
   let experimentIndex = 0;
 
   console.log("Welcome to the LLM API tool interaction experiment!");
-  console.log(
-    "Press the RIGHT ARROW key to move to the next experiment (when the LLM finishes with the right API command or fails)."
-  );
 
+  console.log("Select the system prompt to use (use the number next to it)");
   for (let pi = 0; pi < systemKeys.length; pi++) {
-    console.log("TESTING SYSTEM PROMPT: " + systemKeys[pi]);
-    fileStream.write("TESTING SYSTEM PROMPT: " + systemKeys[pi] + "\n\n\n");
-    const systemPrompt = system[systemKeys[pi]].replace("{user_input}", "");
-    for (let ui = 0; ui < userKeys.length; ui++) {
-      var separateUserPrompts = user[userKeys[ui]].split(/\r?\n|\r|\n/g);
-      for (let si = 0; si < separateUserPrompts.length; si++) {
-        //restart the experiment
-        experimentFinished = false;
-        experimentIndex++;
-        console.log("TESTING USER PROMPT: " + userKeys[ui] + " - " + si);
-        fileStream.write("EXPERIMENT " + experimentIndex + " ====\n");
-        let userPrompt = separateUserPrompts[si];
-        chatMemory = [
-          new SystemChatMessage(systemPrompt),
-          new HumanChatMessage(userPrompt),
-        ];
-        console.log("USER: " + userPrompt);
-        while (!experimentFinished) {
-          console.log("AI: (thinking...)");
-          const res = await chat.call(chatMemory);
-          //console.log(res);
-          console.log("AI: " + res.text);
-          chatMemory.push(new AIChatMessage(res.text));
-          //Save the output to a file, if the experience need additional input from the user, ask it before saving it
-          userPrompt = await rl.question("USER: ");
-          if (userPrompt == "") {
-            console.log(
-              "Processing to the next system prompt + user prompt combination"
-            );
-            experimentFinished = true;
-          } else {
-            chatMemory.push(new HumanChatMessage(userPrompt));
-          }
-        }
-
-        //Save the output to a file
-        for (let i = 0; i < chatMemory.length; i++) {
-          fileStream.write(
-            (chatMemory[i].constructor.name == "SystemChatMessage"
-              ? "SYSTEM PROMPT\n"
-              : chatMemory[i].constructor.name == "HumanChatMessage"
-              ? "USER: "
-              : "AI: ") +
-              chatMemory[i].text +
-              "\n"
-          );
-        }
-        fileStream.write("\n\n\n");
-      }
-    }
-    //Testing another prompt
-    fileStream.write("=====\n====\n\n\n");
+    console.log(pi + " - " + systemKeys[pi]);
   }
+  let systemPromptIndex = await rl.question("Selected system prompt: ");
+
+  console.log(
+    "Let the user prompt empty and press ENTER key to move to the next experiment (criteria: when the LLM finishes with the right API command or fails in any way)."
+  );
+  const systemPrompt = system[systemKeys[systemPromptIndex]].replace(
+    "{user_input}",
+    ""
+  );
+  //for (let pi = 0; pi < systemKeys.length; pi++) {
+  console.log("TESTING SYSTEM PROMPT: " + systemPrompt);
+  fileStream.write("TESTING SYSTEM PROMPT: " + systemPrompt + "\n\n\n");
+
+  for (let ui = 0; ui < userKeys.length; ui++) {
+    var separateUserPrompts = user[userKeys[ui]].split(/\r?\n|\r|\n/g);
+    for (let si = 0; si < separateUserPrompts.length; si++) {
+      //restart the experiment
+      experimentFinished = false;
+      experimentIndex++;
+      console.log("TESTING USER PROMPT: " + userKeys[ui] + " - " + si);
+      fileStream.write("EXPERIMENT " + experimentIndex + " ====\n");
+      let userPrompt = separateUserPrompts[si];
+      chatMemory = [
+        new SystemChatMessage(systemPrompt),
+        new HumanChatMessage(userPrompt),
+      ];
+      console.log("USER: " + userPrompt);
+      while (!experimentFinished) {
+        console.log("AI: (thinking...)");
+        const res = await chat.call(chatMemory);
+        //console.log(res);
+        console.log("AI: " + res.text);
+        chatMemory.push(new AIChatMessage(res.text));
+        //Save the output to a file, if the experience need additional input from the user, ask it before saving it
+        userPrompt = await rl.question("USER: ");
+        if (userPrompt == "") {
+          console.log(
+            "Processing to the next system prompt + user prompt combination"
+          );
+          experimentFinished = true;
+        } else {
+          chatMemory.push(new HumanChatMessage(userPrompt));
+        }
+      }
+
+      //Save the output to a file
+      for (let i = 0; i < chatMemory.length; i++) {
+        fileStream.write(
+          (chatMemory[i].constructor.name == "SystemChatMessage"
+            ? "SYSTEM PROMPT\n"
+            : chatMemory[i].constructor.name == "HumanChatMessage"
+            ? "USER: "
+            : "AI: ") +
+            chatMemory[i].text +
+            "\n"
+        );
+      }
+      fileStream.write("\n\n\n");
+    }
+  }
+  //Testing another prompt
+  fileStream.write("=====\n====\n\n\n");
+  //}
 
   fileStream.end();
   rl.close();

@@ -1,3 +1,4 @@
+You have the ability to use API commands to answer an user request. To do so, you can use the following API functions:
 SEND_EMAIL(email_recipient, subject, message)
 CREATE_CALENDAR_EVENT(date, time, event_name)
 GET_CALENDAR_EVENTS(date)
