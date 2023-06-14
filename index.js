@@ -4,6 +4,7 @@ import { stdin as input, stdout as output } from "node:process";
 import keypress from "keypress";
 import { Utils as utils } from "./utils.js";
 import { OpenAI } from "langchain/llms/openai";
+import { stringify } from "csv-stringify";
 const rl = readline.createInterface({ input, output });
 import fs from "fs";
 import { ChatOpenAI } from "langchain/chat_models/openai";
@@ -47,17 +48,19 @@ let experimentFinished = false;
   maxRetries: 5,
 });*/
 
-const modelName = "gpt-4";
+const modelOptions = [
+  "gpt-4",
+  "gpt-4-0613",
+  "gpt-4-32k",
+  "gpt-4-32k-0613",
+  "gpt-3.5-turbo",
+  "gpt-3.5-turbo-0613",
+  "gpt-3.5-turbo-16k",
+  "gpt-3.5-turbo-16k-0613",
+];
+
 const modelTemperature = 0;
 const modelMaxTokens = 1000;
-
-const chat = new ChatOpenAI({
-  temperature: modelTemperature,
-  maxTokens: modelMaxTokens,
-  maxRetries: 5,
-  modelName: modelName,
-  openAIApiKey: process.env.OPENAI_API_KEY,
-});
 
 //Store system prompts
 let system = {};
@@ -81,9 +84,26 @@ let experimentTimestamp = Date.now();
 let experimentFileName = "experiment_" + experimentTimestamp + ".txt";
 
 var fileStream = fs.createWriteStream("./results/" + experimentFileName);
+
+const csvWriteStream = fs.createWriteStream(
+  "./results/experiment_" + experimentTimestamp + ".csv",
+  { flags: "a" }
+);
+const columns = [
+  "llm_model",
+  "temperature",
+  "system_prompt",
+  "user_prompt",
+  "score",
+];
+const stringifier = stringify({ header: true, columns: columns });
+stringifier.pipe(csvWriteStream);
+
 fileStream.once("open", async function (fd) {
   console.log("Ready to write to file: " + experimentFileName);
-  fileStream.write("=========================================\n");
+  fileStream.write(
+    "============================================================\n"
+  );
   fileStream.write(
     "|                                                          |\n"
   );
@@ -91,23 +111,50 @@ fileStream.once("open", async function (fd) {
     "|       EXPERIMENT WITH LLM TO INTERACT WITH API TOOLS     |\n"
   );
   fileStream.write(
-    "|                    " + experimentTimestamp + "               |\n"
+    "|                         " +
+      experimentTimestamp +
+      "                    |\n"
   );
   fileStream.write(
     "|                                                          |\n"
   );
-  fileStream.write("=========================================\n");
-  fileStream.write("ENVIRONMENT:\n");
-  fileStream.write("LLM model name: " + modelName + "\n");
-  fileStream.write("LLM temperature: " + modelTemperature + "\n");
-  fileStream.write("LLM max tokens: " + modelMaxTokens + "\n");
-  fileStream.write("=========================================\n");
+  fileStream.write(
+    "============================================================\n"
+  );
 
   let experimentIndex = 0;
 
   console.log("Welcome to the LLM API tool interaction experiment!");
+  console.log("");
+  console.log(
+    "Select the LLM model you want to test (use the number next to it to select)"
+  );
+  for (let m = 0; m < modelOptions.length; m++) {
+    console.log(m + " - " + modelOptions[m]);
+  }
+  let modelIndex = await rl.question("Selected LLM model: ");
+  let modelName = modelOptions[modelIndex];
 
-  console.log("Select the system prompt to use (use the number next to it)");
+  fileStream.write("ENVIRONMENT:\n");
+  fileStream.write("LLM model name: " + modelName + "\n");
+  fileStream.write("LLM temperature: " + modelTemperature + "\n");
+  fileStream.write("LLM max tokens: " + modelMaxTokens + "\n");
+  fileStream.write(
+    "============================================================\n"
+  );
+
+  const chat = new ChatOpenAI({
+    temperature: modelTemperature,
+    maxTokens: modelMaxTokens,
+    maxRetries: 5,
+    modelName: modelName,
+    openAIApiKey: process.env.OPENAI_API_KEY,
+  });
+
+  console.log("");
+  console.log(
+    "Select the system prompt to use (use the number next to it to select)"
+  );
   for (let pi = 0; pi < systemKeys.length; pi++) {
     console.log(pi + " - " + systemKeys[pi]);
   }
@@ -116,6 +163,7 @@ fileStream.once("open", async function (fd) {
   console.log(
     "Let the user prompt empty and press ENTER key to move to the next experiment (criteria: when the LLM finishes with the right API command or fails in any way)."
   );
+  console.log("");
   const systemPrompt = system[systemKeys[systemPromptIndex]].replace(
     "{user_input}",
     ""
@@ -142,14 +190,25 @@ fileStream.once("open", async function (fd) {
         console.log("AI: (thinking...)");
         const res = await chat.call(chatMemory);
         //console.log(res);
-        console.log("AI: " + res.text);
+        console.log("> AI: " + res.text);
         chatMemory.push(new AIChatMessage(res.text));
         //Save the output to a file, if the experience need additional input from the user, ask it before saving it
         userPrompt = await rl.question("USER: ");
         if (userPrompt == "") {
+          let score = await rl.question("SCORE (0-3): ");
+          fileStream.write("SCORE: " + score + "\n");
+          stringifier.write([
+            modelName,
+            modelTemperature,
+            systemKeys[systemPromptIndex],
+            userKeys[ui] + " - " + si,
+            score,
+          ]);
+
           console.log(
-            "Processing to the next system prompt + user prompt combination"
+            "Proceeding to the next system prompt + user prompt combination"
           );
+          console.log("")
           experimentFinished = true;
         } else {
           chatMemory.push(new HumanChatMessage(userPrompt));
@@ -176,6 +235,7 @@ fileStream.once("open", async function (fd) {
   //}
 
   fileStream.end();
+  csvWriteStream.end();
   rl.close();
 });
 

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "cohere-ai": "^5.1.0",
+    "csv-stringify": "^6.4.0",
     "dotenv": "^16.1.4",
     "keypress": "^0.2.1",
     "langchain": "^0.0.71",
