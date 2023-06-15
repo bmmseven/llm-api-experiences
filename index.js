@@ -49,15 +49,37 @@ let experimentFinished = false;
 });*/
 
 const modelOptions = [
-  "gpt-4",
-  "gpt-4-0613",
-  "gpt-4-32k",
-  "gpt-4-32k-0613",
-  "gpt-3.5-turbo",
-  "gpt-3.5-turbo-0613",
-  "gpt-3.5-turbo-16k",
-  "gpt-3.5-turbo-16k-0613",
+  "openai/gpt-4",
+  "openai/gpt-4-0613",
+  "openai/gpt-4-32k",
+  "openai/gpt-4-32k-0613",
+  "openai/gpt-3.5-turbo",
+  "openai/gpt-3.5-turbo-0613",
+  "openai/gpt-3.5-turbo-16k",
+  "openai/gpt-3.5-turbo-16k-0613",
+  //"stabilityai/stablelm-tuned-alpha-7b", //TODO: Implement this one
+  //"stabilityai/stablelm-base-alpha-7b", //TODO: Implement this one
+
 ];
+
+/*
+async function query(data) {
+	const response = await fetch(
+		"https://api-inference.huggingface.co/models/stabilityai/stablelm-tuned-alpha-7b",
+		{
+			headers: { Authorization: "Bearer {API_TOKEN}" },
+			method: "POST",
+			body: JSON.stringify(data),
+		}
+	);
+	const result = await response.json();
+	return result;
+}
+
+query({"inputs": "Can you please let us know more details about your "}).then((response) => {
+	console.log(JSON.stringify(response));
+});
+*/
 
 const modelTemperature = 0;
 const modelMaxTokens = 1000;
@@ -147,7 +169,7 @@ fileStream.once("open", async function (fd) {
     temperature: modelTemperature,
     maxTokens: modelMaxTokens,
     maxRetries: 5,
-    modelName: modelName,
+    modelName: modelName.split("/")[1],
     openAIApiKey: process.env.OPENAI_API_KEY,
   });
 
