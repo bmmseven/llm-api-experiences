@@ -57,9 +57,8 @@ const modelOptions = [
   "openai/gpt-3.5-turbo-0613",
   "openai/gpt-3.5-turbo-16k",
   "openai/gpt-3.5-turbo-16k-0613",
-  //"stabilityai/stablelm-tuned-alpha-7b", //TODO: Implement this one
-  //"stabilityai/stablelm-base-alpha-7b", //TODO: Implement this one
-
+  "stabilityai/stablelm-tuned-alpha-7b", //TODO: Implement this one
+  "stabilityai/stablelm-base-alpha-7b", //TODO: Implement this one
 ];
 
 /*
@@ -210,7 +209,17 @@ fileStream.once("open", async function (fd) {
       console.log("USER: " + userPrompt);
       while (!experimentFinished) {
         console.log("AI: (thinking...)");
-        const res = await chat.call(chatMemory);
+        let res;
+        if (modelName.startsWith("openai/")) {
+          res = await chat.call(chatMemory);
+        } else {
+          res = await utils.huggingFaceApiCall(
+            chatMemory,
+            modelName,
+            modelTemperature,
+            process.env.HUGGINGFACEHUB_API_KEY
+          );
+        }
         //console.log(res);
         console.log("> AI: " + res.text);
         chatMemory.push(new AIChatMessage(res.text));
@@ -226,11 +235,10 @@ fileStream.once("open", async function (fd) {
             userKeys[ui] + " - " + si,
             score,
           ]);
-
           console.log(
             "Proceeding to the next system prompt + user prompt combination"
           );
-          console.log("")
+          console.log("");
           experimentFinished = true;
         } else {
           chatMemory.push(new HumanChatMessage(userPrompt));

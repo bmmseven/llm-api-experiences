@@ -1,4 +1,9 @@
 import fs from "fs";
+import {
+  HumanChatMessage,
+  SystemChatMessage,
+  AIChatMessage,
+} from "langchain/schema";
 export class Utils {
   static readFiles(dirname) {
     return new Promise((resolve, reject) => {
@@ -39,4 +44,51 @@ export class Utils {
       });
     });
   }
-};
+
+  static async huggingFaceApiCall(chat = [], model, temperature, apiKey) {
+    let input = "";
+    //Create the input from the chat
+    if (
+      model == "stabilityai/stablelm-tuned-alpha-7b" ||
+      model == "stabilityai/stablelm-base-alpha-7b"
+    ) {
+      //"inputs": "Can you please let us know more details about your ",
+      chat.forEach((message) => {
+        console.log("MESSAGE TYPE");
+        console.log(message.constructor.name);
+        if (message.constructor.name == "HumanChatMessage") {
+          input += "<|USER|>" + message.text + " ";
+        } else if (message.constructor.name == "SystemChatMessage") {
+          input += "<|SYSTEM|>" + message.text + " ";
+        } else if (message.constructor.name == "AIChatMessage") {
+          input += "<|ASSISTANT|>" + message.text;
+        } else {
+          console.warn("Unknown message type");
+        }
+      });
+    }
+    const response = await fetch(
+      "https://api-inference.huggingface.co/models/" + model,
+      {
+        headers: {
+          Authorization: "Bearer " + apiKey,
+        },
+        method: "POST",
+        body: JSON.stringify({
+          inputs: input,
+          parameters: {
+            temperature: temperature,
+          },
+        }),
+      }
+    );
+    const result = await response.json();
+    console.log("RESULT");
+    if(result.error) {
+      console.log(result.error);
+      return result.error;
+    }
+    console.log(result);
+    return result;
+  }
+}
