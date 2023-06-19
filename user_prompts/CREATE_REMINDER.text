@@ -1,40 +1,40 @@
-1. CREATE_REMINDER(2023-01-01, 08:00, "Meeting with PT Team").
-2. CREATE_REMINDER(2024-07-15, 12:30, "Lunch with CEO at The Ritz-Carlton").
-3. CREATE_REMINDER(2025-11-26, 18:00, "Thanksgiving dinner with family").
-4. CREATE_REMINDER(2026-04-01, 14:00, "April Fool's Day prank on colleague").
-5. CREATE_REMINDER(2027-06-28, 10:30, "Client meeting at Starbucks").
-6. CREATE_REMINDER(2023-03-15, 09:00, "Quarterly Sales Review").
-7. CREATE_REMINDER(2024-09-23, 11:15, "Doctor's appointment").
-8. CREATE_REMINDER(2025-12-31, 23:59, "New Year's Eve party").
-9. CREATE_REMINDER(2026-02-14, 19:00, "Valentine's Day dinner with spouse").
-10. CREATE_REMINDER(2027-08-04, 07:30, "Morning workout at the gym").
-11. CREATE_REMINDER(2023-10-31, 18:00, "Halloween party with friends").
-12. CREATE_REMINDER(2024-03-08, 12:00, "International Women's Day lunch with colleagues").
-13. CREATE_REMINDER(2025-02-17, 10:00, "Important business meeting with investors").
-14. CREATE_REMINDER(2026-10-15, 15:30, "Pick up kids from school").
-15. CREATE_REMINDER(2027-03-20, 20:00, "Dinner at favorite restaurant with family").
-16. CREATE_REMINDER(2023-09-01, 14:00, "Start of the new project meeting").
-17. CREATE_REMINDER(2024-05-10, 16:00, "Mother's Day surprise for mom").
-18. CREATE_REMINDER(2025-04-22, 09:00, "Earth Day volunteer event").
-19. CREATE_REMINDER(2026-11-10, 11:30, "Important meeting with boss").
-20. CREATE_REMINDER(2027-07-04, 16:00, "Independence Day celebration with friends").
-21. CREATE_REMINDER(2023-08-08, 13:00, "Team-building activity at the park").
-22. CREATE_REMINDER(2024-01-20, 10:00, "Inauguration Day event").
-23. CREATE_REMINDER(2025-09-07, 07:00, "Labor Day beach trip with family").
-24. CREATE_REMINDER(2026-05-05, 09:30, "Cinco de Mayo party at the office").
-25. CREATE_REMINDER(2027-01-01, 00:00, "New Year's Day fireworks show").
-26. CREATE_REMINDER(2023-12-24, 20:00, "Christmas Eve dinner with extended family").
-27. CREATE_REMINDER(2024-06-16, 14:00, "Father's Day surprise for dad").
-28. CREATE_REMINDER(2025-11-01, 08:00, "Start of the month team meeting").
-29. CREATE_REMINDER(2026-09-05, 12:00, "Labor Day picnic with friends").
-30. CREATE_REMINDER(2027-02-14, 10:00, "Valentine's Day surprise for significant other").
-31. CREATE_REMINDER(2023-05-29, 09:30, "Memorial Day parade with community group").
-32. CREATE_REMINDER(2024-03-01, 11:00, "Employee performance review with manager").
-33. CREATE_REMINDER(2025-08-30, 15:00, "Last day of project milestone meeting").
-34. CREATE_REMINDER(2026-01-01, 12:00, "New Year's Day brunch with friends").
-35. CREATE_REMINDER(2027-04-22, 16:00, "Earth Day happy hour at the bar").
-36. CREATE_REMINDER(2023-06-18, 17:00, "Child's school play performance").
-37. CREATE_REMINDER(2024-12-25, 12:30, "Christmas Day lunch with immediate family").
-38. CREATE_REMINDER(2025-10-31, 19:00, "Halloween trick-or-treat with kids").
-39. CREATE_REMINDER(2026-07-04, 08:00, "Independence Day parade with community group").
-40. CREATE_REMINDER(2027-05-12, 13:00, "Mother's Day brunch with extended family").
+1. GPT-4, create a reminder on 2023-07-10 at 11:00 AM for a business meeting.
+2. Set up a reminder for a birthday party on 2024-05-15, 6:00 PM.
+3. Please remind me about my anniversary on 2025-09-04 at 7:00 PM.
+4. Create a reminder to call my friend on 2023-02-27, 12:30 PM.
+5. Remind me to buy groceries on 2026-04-11, 4:00 PM.
+6. Set up a reminder on 2024-12-20 at 9:00 PM for a holiday event.
+7. GPT-4, add a reminder on 2027-08-02, 1:00 PM to attend a conference.
+8. Remind me about my dentist appointment on 2025-11-29, 10:00 AM.
+9. Create a reminder for my car's maintenance on 2023-03-05, 2:00 PM.
+10. Set a reminder to visit my parents on 2026-10-14, 5:00 PM.
+11. GPT-4, remind me to take out the trash on 2028-01-19, 8:00 PM.
+12. Create a reminder for my workout session on 2024-06-18, 6:00 AM.
+13. Remind me about the school function on 2023-05-20, 3:00 PM.
+14. Set up a reminder for my doctor's appointment on 2025-07-30, 9:00 AM.
+15. Create a reminder to pay bills on 2026-02-16, 7:00 PM.
+16. GPT-4, set a reminder to send a report on 2027-05-22, 4:00 PM.
+17. Remind me to buy concert tickets on 2028-09-25, 10:00 AM.
+18. Add a reminder to water the plants on 2023-08-29, 5:00 PM.
+19. Create a reminder for a movie night on 2024-04-06, 8:00 PM.
+20. Set a reminder to order pizza for the party on 2025-03-18, 6:30 PM.
+21. GPT-4, remind me to renew my insurance on 2026-07-24, 9:00 AM.
+22. Create a reminder to book a flight on 2027-11-04, 11:00 AM.
+23. Remind me about the college reunion on 2023-10-20, 7:00 PM.
+24. Set up a reminder to send a birthday card on 2024-01-15, 10:00 AM.
+25. Create a reminder to buy movie tickets on 2025-05-10, 12:00 PM.
+26. GPT-4, set a reminder for a coffee meeting on 2026-08-17, 3:00 PM.
+27. Remind me to clean my room on 2027-12-24, 4:00 PM.
+28. Create a reminder to apply for a job on 2023-07-16, 9:00 AM.
+29. Set a reminder to book a hotel on 2024-02-26, 10:00 AM.
+30. GPT-4, remind me to buy a gift for my friend on 2025-09-07, 6:00 PM.
+31. Create a reminder for my date night on 2026-03-12, 8:00 PM.
+32. Remind me about the webinar on 2027-11-02, 5:00 PM.
+33. Create a reminder to pick up the dry cleaning on 2023-09-15, 6:00 PM.
+34. Set up a reminder on 2024-05-21, 5:00 PM, to attend a workshop.
+35. GPT-4, remind me to attend my sibling's graduation on 2025-06-30, 10:00 AM.
+36. Add a reminder for an annual check-up on 2026-11-27, 9:00 AM.
+37. Create a reminder to call my grandparents on 2027-04-16, 2:00 PM.
+38. Remind me to return the library books on 2023-04-04, 4:00 PM.
+39. Set a reminder for the RSVP deadline on 2024-12-11, 3:00 PM.
+40. GPT-4, create a reminder for the housewarming party on 2025-08-22, 7:00 PM.
