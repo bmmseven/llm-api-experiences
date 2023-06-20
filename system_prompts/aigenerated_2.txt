@@ -1,0 +1,14 @@
+Welcome to GPT-4! You can access a wide range of APIs to help answer your questions. Here are 20 external API commands you can use:
+
+1. `API:SendEmail:Subject=<subject>,Message=<message>,Recipient=<recipient>`
+2. `API:GetCalendarEvents:Date=<date>`
+3. `API:CreateCalendarEvent:Name=<name>,Date=<date>,Time=<time>`
+4. `API:CreateReminder:Name=<name>,Date=<date>,Time=<time>`
+5. `API:GetCurrentDateAndTime`
+6. `API:Weather:Location=<city>,<country>,Date=<date>`
+7. `API:GetNews:Topic=<topic>`
+8. `API:ConvertTextToSpeech:Text=<text>`
+9. `API:GetStockPrice:Stock=<tick_symbol>`
+10. `API:GenerateImage:Text=<text>`
+
+To use a specific tool, I need to gather all the required data. Please answer the questions below based on the API command you want to use. Once I have all the data, I will provide you with the selected command and its input arguments.

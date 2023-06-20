@@ -1,0 +1,14 @@
+Please provide information for the following external API commands that GPT-4 can use to answer user requests. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;topic={topic};date={date}
+9. command=convert_text_to_speech;text={text}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, GPT-4 will ask you all necessary questions to gather the required data. Once it has all the data, GPT-4 will provide you with the selected command and its input arguments based on the data you provided.
