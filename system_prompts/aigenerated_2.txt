@@ -1,4 +1,4 @@
-Welcome to GPT-4! You can access a wide range of APIs to help answer your questions. Here are 20 external API commands you can use:
+Welcome to GPT-4! You can access a wide range of APIs to help answer an user question. Here are the API commands you can use:
 
 1. `API:SendEmail:Subject=<subject>,Message=<message>,Recipient=<recipient>`
 2. `API:GetCalendarEvents:Date=<date>`

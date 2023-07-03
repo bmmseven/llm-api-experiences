@@ -1,31 +1,17 @@
-GPT-4, please provide a list of 20 external API commands that you can use to help users with their requests. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
+GPT-4, you have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
-1. WeatherForecast: GetWeatherForecast(location, date, time=NULL); location: string; date: YYYY-MM-DD; time: HH:mm (optional)
-2. CurrencyConversion: ConvertCurrency(amount, from_currency, to_currency); amount: float; from_currency: string; to_currency: string
-3. FlightStatus: CheckFlightStatus(airline, flight_number, date=NULL); airline: string; flight_number: string; date: YYYY-MM-DD (optional)
-4. RestaurantSearch: FindRestaurants(location, cuisine=NULL, price_range=NULL); location: string; cuisine: string (optional); price_range: string (optional)
-5. MovieShowtimes: GetMovieShowtimes(location, movie=NULL, date=NULL, time=NULL); location: string; movie: string (optional); date: YYYY-MM-DD (optional); time: HH:mm (optional)
-6. NewsHeadlines: GetNewsHeadlines(category, country=NULL); category: string; country: string (optional)
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetCurrentWeather: GetCurrentWeather(city, country_code); city: string; country_code: string
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
 7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
-8. SongLyrics: GetSongLyrics(artist, song_title); artist: string; song_title: string
-9. SportsScores: GetSportsScores(league, team=NULL, date=NULL); league: string; team: string (optional); date: YYYY-MM-DD (optional)
-10. BookRecommendations: GetBookRecommendations(genre, author=NULL); genre: string; author: string (optional)
-11. RecipeSearch: FindRecipes(ingredient, dish=NULL); ingredient: string; dish: string (optional)
-12. EventSearch: FindEvents(location, event_type=NULL, date=NULL); location: string; event_type: string (optional); date: YYYY-MM-DD (optional)
-13. TriviaQuestions: GetTriviaQuestions(category, difficulty=NULL); category: string; difficulty: string (optional)
-14. JobSearch: FindJobs(location, job_title=NULL, company=NULL); location: string; job_title: string (optional); company: string (optional)
-15. ProductPrice: GetProductPrice(product_name, store=NULL); product_name: string; store: string (optional)
-16. DictionaryLookup: DefineWord(word); word: string
-17. LanguageTranslation: TranslateText(text, source_language, target_language); text: string; source_language: string; target_language: string
-18. TVShowSchedule: GetTVShowSchedule(show_title, date=NULL); show_title: string; date: YYYY-MM-DD (optional)
-19. LocalTime: GetLocalTime(city, country); city: string; country: string
-20. Horoscope: GetHoroscope(sign, date=NULL); sign: string; date: YYYY-MM-DD (optional)
+8. GetTrendingNews: GetTrendingNews(topic, date); topic: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text); text: string
+10. GenerateImage: GenerateImage(prompt); prompt: string
 
-Example: 
-User Request: I want to know the weather forecast for London on December 5th.
+Example:
+User Request: I want to know the weather forecast for London.
 
-GPT-4: What time would you like the weather forecast for? (Please provide the time in HH:mm format or type "Any" if you don't have a specific time in mind.)
-
-User: Any
-
-GPT-4: GetWeatherForecast("London", "2022-12-05")
+GPT-4: GetCurrentWeather("London", "UK")

@@ -1,0 +1,27 @@
+============================================================
+|                                                          |
+|       EXPERIMENT WITH LLM TO INTERACT WITH API TOOLS     |
+|                         1687959746923                    |
+|                                                          |
+============================================================
+ENVIRONMENT:
+LLM model name: openai/gpt-4
+LLM temperature: 0
+LLM max tokens: 1000
+============================================================
+TESTING SYSTEM PROMPT: You have the ability to use API commands to answer an user request. To do so, you can use the following API functions:
+SEND_EMAIL(email_recipient, subject, message)
+CREATE_CALENDAR_EVENT(date, time, event_name)
+GET_CALENDAR_EVENTS(date)
+CREATE_REMINDER(date, time, text)
+GET_CURRENT_DATE_AND_TIME()
+GET_WEATHER(city, country, date)
+GET_TOP_NEWS_HEADLINES(country, category: business|entertainment|general|health|science|sports|technology)
+CONVERT_TEXT_TO_SPEECH(text, languageCode, ssmlGender: MALE|FEMALE|NEUTRAL)
+GET_CURRENT_STOCK_PRICE(ticker)
+GENERATE_IMAGE(image_prompt)
+
+
+
+
+EXPERIMENT 1 ====
