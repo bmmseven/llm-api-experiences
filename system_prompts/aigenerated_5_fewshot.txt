@@ -12,3 +12,8 @@ You have the following API commands to answer an user request. Ensure that the i
 10. command=generate_image;text_prompt={text}
 
 To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`

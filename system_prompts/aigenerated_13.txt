@@ -10,8 +10,3 @@ You have the following API commands to answer an user request. After detecting t
 8. GetTrendingNews: GetTrendingNews(topic, date); topic: string; date: YYYY-MM-DD
 9. ConvertTextToSpeech: ConvertTextToSpeech(text); text: string
 10. GenerateImage: GenerateImage(prompt); prompt: string
-
-Example:
-User Request: I want to know the weather forecast for London.
-
-GPT-4: GetCurrentWeather("London", "UK")

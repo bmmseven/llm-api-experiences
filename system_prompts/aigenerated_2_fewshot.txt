@@ -12,3 +12,8 @@ You can access a wide range of APIs to help answer an user question. Here are th
 10. `API:GenerateImage:Text=<text>`
 
 To use a specific tool, I need to gather all the required data. Please answer the questions below based on the API command you want to use. Once I have all the data, I will provide you with the selected command and its input arguments.
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `API:CreateReminder:Name="Buy milk",Date="2023-04-24",Time="9:00"`
