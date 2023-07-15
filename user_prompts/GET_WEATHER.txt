@@ -1,20 +1,20 @@
-Get weather information for New York, USA on June 25, 2023.
+Get weather information for New York on June 25, 2023.
 Find out the weather in Dubai, UAE on January 1, 2024.
 Retrieve San Francisco, USA weather on December 12, 2023.
 Look for weather conditions in Dublin, Ireland on April 29, 2025.
-Request weather conditions for Edinburgh, Scotland on May 29, 2026.
-Access weather details for Buenos Aires, Argentina on May 31, 2025.
+Request weather conditions for Scotland on May 29, 2026.
+Access weather details for Buenos Aires, Argentina.
 Seek weather information for Singapore on November 3, 2024.
 Fetch the weather for Riyadh, Saudi Arabia on September 15, 2025.
 Show me the weather for Cairo, Egypt on March 12, 2026.
-Display weather details for Santiago, Chile on June 11, 2026.
+Display weather details for Santiago on June 11, 2026.
 Get weather update for Toronto, Canada on April 7, 2024.
-Query weather details for Bangkok, Thailand on January 8, 2026.
+Query weather details for Bangkok, Thailand.
 Show London, UK weather details on July 4, 2023.
-Provide weather data for Lisbon, Portugal on February 17, 2026.
-Find weather info for Berlin, Germany on March 21, 2025.
+Provide weather data for Lisbon on February 17, 2026.
+Find weather info for Germany on March 21, 2025.
 Uncover Paris, France weather on June 11, 2025.
-Provide weather info for Sydney, Australia on October 10, 2023.
+Provide weather info for Sydney, Australia.
 Get weather info for Warsaw, Poland on December 16, 2025.
 Collect weather data for Madrid, Spain on May 15, 2024.
 Display weather conditions for Rome, Italy on November 19, 2023.

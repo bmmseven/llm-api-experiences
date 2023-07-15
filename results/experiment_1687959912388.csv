@@ -1,2 +1,0 @@
-llm_model,temperature,system_prompt,user_prompt,score
-openai/gpt-4,0,aigenerated_7.txt,create_calendar_event.text - 0,0
