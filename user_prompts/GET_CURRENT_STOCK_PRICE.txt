@@ -1,0 +1,20 @@
+Provide a list of stocks with more than a 5% increase on June 9, 2023.
+How did the S&P 500 perform on June 2, 2023?
+Which company had the highest stock price on June 1, 2023?
+On June 25, 2023, what was the closing stock price for IBM?
+What's the current stock price for Uber Technologies, Inc.?
+Identify the largest losers in share prices on June 15, 2023.
+Find out which company had the highest trading volume on June 5, 2023.
+Tell me the top 3 stocks in terms of price change on June 7, 2023.
+Find the stock price of all key companies on June 1, 2023.
+Display the stock price of MSFT on June 4, 2023.
+Find the stock market price of PepsiCo, Inc. on July 1, 2023.
+Get me the top 5 stocks in the technology sector on June 20, 2023.
+Calculate the EPS of Tesla for Q2 2023.
+Kindly fetch the stock price of TSLA on June 2, 2023.
+What was the market cap for Apple on June 1, 2023?
+Retrieve the 52-week low for Microsoft stock.
+Check the stock price of AMD on September 12, 2023.
+Can you provide AMZN closing stock price on June 3, 2023?
+Give me profit margin details for Facebook in June 2023.
+What was the closing price of GOOGL stock on June 1st, 2023?
