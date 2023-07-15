@@ -7,7 +7,7 @@ You have the following API commands to answer an user request:
 5. api://reminder/createReminder?name={NAME}&date={DATE}&time={TIME}
 6. api://time/getCurrentDateTime
 7. api://stock/getCurrentStockPrice?symbol={SYMBOL}
-8. api://news/getTrendingNews?topic={TOPIC}&date={DATE}
+8. api://news/getTrendingNews?country={COUNTRY}&date={DATE}
 9. api://convert/textToSpeech?text={TEXT}
 10. api://generate/generateImage?prompt={TEXT_PROMPT}
 

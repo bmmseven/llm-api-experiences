@@ -7,6 +7,6 @@ You have the following API commands to answer an user request. After detecting t
 5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
 6. GetCurrentDateTime: GetCurrentDateTime()
 7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
-8. GetTrendingNews: GetTrendingNews(topic, date); topic: string; date: YYYY-MM-DD
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
 9. ConvertTextToSpeech: ConvertTextToSpeech(text); text: string
 10. GenerateImage: GenerateImage(prompt); prompt: string

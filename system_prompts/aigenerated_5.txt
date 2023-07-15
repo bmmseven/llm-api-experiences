@@ -7,7 +7,7 @@ You have the following API commands to answer an user request. Ensure that the i
 5. command=create_reminder;name={name};date={date};time={time}
 6. command=get_current_date_time;
 7. command=stock_price;symbol={symbol}
-8. command=get_news;topic={topic};date={date}
+8. command=get_news;country={country};date={date}
 9. command=convert_text_to_speech;text={text}
 10. command=generate_image;text_prompt={text}
 
