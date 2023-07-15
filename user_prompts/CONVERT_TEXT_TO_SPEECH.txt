@@ -1,4 +1,4 @@
-Convert the text "Hello World" to speech, English, female voice.
+Convert the text "Hello World" to speech.
 Say "Bonjour tout le monde" in French with a male voice.
 I want to hear "Guten Tag" in German by a neutral voice.
 Speak the phrase "Olá, tudo bem?" in Portuguese using a neutral voice.
@@ -13,8 +13,8 @@ Speak the phrase "สวัสดีครับ" in Arabic with a female voice.
 Read the text "Selam, nasılsın?" in Turkish using a male voice.
 Speak "Alo, kijan ou ye?" in Haitian Creole with a male voice.
 Convert the text "Hej, hvordan har du det?" to speech in Norwegian with a neutral voice.
-Speak "Sawubona, unjani?" in Zulu with a male voice.
+Speak "Sawubona, unjani?" with a male voice.
 Convert the text "வணக்கம், எப்படி இருக்கின்றீர்கள்?" to speech in Tamil using a female voice.
 Please read "হ্যালো, আপনি কেমন আছেন?" in Bengali using a neutral voice.
 Say "ਹੈਲੋ, ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?" in Punjabi with a neutral voice.
-Read the text "ହେଲୋ, ଆପଣ କେମିତି ଅଛନ୍ତି?" in Odia using a male voice.
+Read the text "ହେଲୋ, ଆପଣ କେମିତି ଅଛନ୍ତି?".

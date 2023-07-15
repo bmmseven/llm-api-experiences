@@ -4,9 +4,9 @@ You have the ability to use API commands to answer an user request. To do so, yo
 3. ‘createEvent(name,date,time)‘ - this function creates an event with a name, date and time.
 4. ‘createReminder(name,date,time)‘ - this function creates a reminder: with a name, date and time.
 5. ‘getCurrentDateAndTime()‘ - this function returns the current date and time.
-6. ‘getWeather(date,place)‘ - this function returns the weather for a date and place.
+6. ‘getWeather(city,country,date)‘ - this function returns the weather for a date, city and country.
 7. ‘getNews(country,topic)‘ - this function returns the top headlines for a country in a specific topic.
-8. ‘convertTextToSpeech(text)‘ - this function converts text-to-speech with text as input.
+8. ‘convertTextToSpeech(text,languageCode,gender)‘ - this function converts text-to-speech with text as input, destination language and gender
 9. ‘getCurrentStockPrice(ticker)‘ - this function returns the current price for a publicly traded company.
 10. ‘generateImage(prompt)‘ - this function returns a generated image related to the inserted prompt. 
 

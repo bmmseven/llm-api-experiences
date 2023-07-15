@@ -1,20 +1,20 @@
-Can I get the latest news about technology in the United States? I'd like to see the top 5 articles.
-Show me the most recent 10 sports news articles from Canada.
-Could you provide the latest entertainment news in Japan? Limit the result to 7 articles.
-I need the top 3 health news stories in Australia, please.
-Give me the most recent politics news in Germany. I want to see just 5 articles.
-Can you show me the latest 6 articles on science news in China?
-Fetch the top 10 news about business in France, please.
-I want to read the most recent news in technology from the UK. Limit to 8 articles.
-Get me the latest 5 articles on health news from Italy.
-Please show me the latest 7 articles about sports in India.
-Could you find me the 4 latest articles on entertainment in Brazil?
-I'd like to see the latest business news in Mexico. Show me the top 6 articles.
-Can you fetch the most recent 8 articles on science in South Korea?
-Show me the 5 latest articles on politics from South Africa.
-Find me the top 7 technology articles from Russia, please.
-Get me the latest 9 articles about health from Spain.
-Can you fetch the 10 most recent entertainment articles from Netherlands?
-Please find the latest news about business in the UAE. Show me the top 5 articles.
-I want to see the latest 7 news articles on science in Argentina.
-Show me the most recent politics news from Singapore. I'd like to see just 6 articles.
+Can I get the latest news about technology in the United States?
+Show me the most recent sports news articles from Canada.
+Could you provide the latest entertainment news in Japan?
+I need the top health news stories in Australia, please.
+Give me the most recent politics news in Germany.
+Can you show me the latest articles on science news in China?
+Fetch the top news about business in France, please.
+I want to read the most recent news in technology from the UK.
+Get me the latest articles on health news from Italy.
+Please show me the latest articles about sports in India.
+Could you find me the latest articles on entertainment in Brazil?
+I'd like to see the latest business news in Mexico.
+Can you fetch the most recent articles on science in South Korea?
+Show me the latest articles on politics from South Africa.
+Find me the top technology articles from Russia, please.
+Get me the latest articles about health from Spain.
+Can you fetch the most recent entertainment articles from Netherlands?
+Please find the latest news about business in the UAE. Show me the top articles.
+I want to see the latest news articles on science in Argentina.
+Show me the most recent politics news from Singapore.
