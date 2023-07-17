@@ -29,7 +29,6 @@ Start a timer for 20 minutes.
 Play lullabies.
 Help me find a ramen recipe.
 What's the flight status of UA 232?
-What's the current stock price for Uber Technologies, Inc.?
 What is the current market value of my house?
 Check out the latest fashion trends.
 Find the stock price of all key companies on June 1, 2023.
@@ -39,7 +38,6 @@ Who wrote 'The Great Gatsby'?
 Set an alarm for 6 AM daily.
 Send Peter a message on Facebook.
 Book a hotel room in New York.
-Check the stock price of AMD on September 12, 2023.
 Increase the brightness of my screen.
 Give me a trivia question.
 Call my dentist's office.
@@ -67,7 +65,6 @@ Find a gluten-free bread recipe.
 What's the nutritional value of an avocado?
 Call John Doe.
 Order groceries online.
-Retrieve the 52-week low for Microsoft stock.
 Create a new playlist on Spotify.
 Play relaxing music.
 How's my heart rate?
@@ -94,20 +91,15 @@ Get me the top 5 stocks in the technology sector on June 20, 2023.
 What's the time in Sydney right now?
 Play 'Game of Thrones' season 3.
 Reschedule my dinner date to next week.
-Display the stock price of MSFT on June 4, 2023.
 Where's the nearest coffee shop?
 Calculate the square root of 256.
-How did the S&P 500 perform on June 2, 2023?
 Tell me the top 3 stocks in terms of price change on June 7, 2023.
 Calculate the EPS of Tesla for Q2 2023.
 Tell me a joke.
-On June 25, 2023, what was the closing stock price for IBM?
 Order chinese food for my lunch today.
 How's my portfolio doing?
-Kindly fetch the stock price of TSLA.
 Turn on my tv.
 Call the non-emergency police number.
-What was the market cap for Apple?
 Turn on the dishwasher.
 How's the air quality today?
 Plan a route for my morning jog.
@@ -117,7 +109,6 @@ Call me a taxi.
 Set an alarm for 7 AM tomorrow.
 Get me directions to the zoo.
 Open the Uber app.
-What was the closing price of GOOGL stock on June 1st, 2023?
 Set a daily reminder to drink water.
 Order Chinese from the nearest restaurant.
 Who won the football game last night?
@@ -125,6 +116,5 @@ Find the best route to the airport.
 Help me find a new job.
 Convert 200 dollars to euros.
 Make me coffe.
-Can you provide AMZN stock price?
 Give motivational quotes.
 When's the next basketball game?
