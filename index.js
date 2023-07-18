@@ -248,11 +248,11 @@ fileStream.once("open", async function (fd) {
       //Save the output to a file
       for (let i = 0; i < chatMemory.length; i++) {
         fileStream.write(
-          (chatMemory[i].constructor.name == "SystemChatMessage"
+          (chatMemory[i].constructor.name == "SystemMessage"
             ? "SYSTEM PROMPT\n"
-            : chatMemory[i].constructor.name == "HumanChatMessage"
-            ? "USER: "
-            : "AI: ") +
+            : chatMemory[i].constructor.name == "HumanMessage"
+            ? "USER: " : chatMemory[i].constructor.name == "HumanMessage"
+            ? "AI: " : "OTHER: ") +
             chatMemory[i].text +
             "\n"
         );
