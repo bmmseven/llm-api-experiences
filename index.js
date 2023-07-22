@@ -8,6 +8,7 @@ import { stringify } from "csv-stringify";
 const rl = readline.createInterface({ input, output });
 import fs from "fs";
 import { ChatOpenAI } from "langchain/chat_models/openai";
+import { ChatGoogleVertexAI } from "langchain/chat_models/googlevertexai";
 import {
   HumanChatMessage,
   SystemChatMessage,
@@ -57,6 +58,7 @@ const modelOptions = [
   "openai/gpt-3.5-turbo-0613",
   "openai/gpt-3.5-turbo-16k",
   "openai/gpt-3.5-turbo-16k-0613",
+  "google/palm/chat-bison",
   "stabilityai/stablelm-tuned-alpha-7b", //TODO: Implement this one
   "stabilityai/stablelm-base-alpha-7b", //TODO: Implement this one
 ];
@@ -164,13 +166,19 @@ fileStream.once("open", async function (fd) {
     "============================================================\n"
   );
 
-  const chat = new ChatOpenAI({
-    temperature: modelTemperature,
-    maxTokens: modelMaxTokens,
-    maxRetries: 5,
-    modelName: modelName.split("/")[1],
-    openAIApiKey: process.env.OPENAI_API_KEY,
-  });
+  const chat = modelName.startsWith("google/palm")
+    ? new ChatGoogleVertexAI({
+        maxOutputTokens: modelMaxTokens,
+        temperature: modelTemperature, // OPTIONAL
+        model: modelName.split("/")[2], // OPTIONAL
+      })
+    : new ChatOpenAI({
+        temperature: modelTemperature,
+        maxTokens: modelMaxTokens,
+        maxRetries: 5,
+        modelName: modelName.split("/")[1],
+        openAIApiKey: process.env.OPENAI_API_KEY,
+      });
 
   console.log("");
   console.log(
@@ -210,7 +218,11 @@ fileStream.once("open", async function (fd) {
       while (!experimentFinished) {
         console.log("AI: (thinking...)");
         let res;
-        if (modelName.startsWith("openai/")) {
+        if (
+          modelName.startsWith("openai/") ||
+          modelName.startsWith("google/")
+        ) {
+          //Use langchain
           res = await chat.call(chatMemory);
         } else {
           res = await utils.huggingFaceApiCall(
@@ -251,8 +263,8 @@ fileStream.once("open", async function (fd) {
           (chatMemory[i].constructor.name == "SystemMessage"
             ? "SYSTEM PROMPT\n"
             : chatMemory[i].constructor.name == "HumanMessage"
-            ? "USER: " : chatMemory[i].constructor.name == "HumanMessage"
-            ? "AI: " : "OTHER: ") +
+            ? "USER: "
+            : "AI: ") +
             chatMemory[i].text +
             "\n"
         );
