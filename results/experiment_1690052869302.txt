@@ -1,0 +1,2679 @@
+============================================================
+|                                                          |
+|       EXPERIMENT WITH LLM TO INTERACT WITH API TOOLS     |
+|                         1690052869302                    |
+|                                                          |
+============================================================
+ENVIRONMENT:
+LLM model name: openai/gpt-4-0613
+LLM temperature: 0
+LLM max tokens: 1000
+============================================================
+TESTING SYSTEM PROMPT: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+
+EXPERIMENT 1 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Where's the nearest sushi place?
+OTHER: I don't know.
+USER: 0
+OTHER: I'm sorry, but your request is unclear. Could you please provide more information?
+
+
+
+EXPERIMENT 2 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Will it rain tomorrow?
+OTHER: I'm sorry, but I need more information to answer your question. Could you please provide the city and country code?
+USER: addis abeba, Ethiopia
+OTHER: command=weather;city=addis abeba;country_code=ET;date=tomorrow
+
+
+
+EXPERIMENT 3 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the closest ATM from here?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 4 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Start a 20-minute nap timer.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 5 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Order pizza from Dominos.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 6 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find the fastest way to get to JFK Airport.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 7 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Make a list of books to read.
+OTHER: I'm sorry, but there is no API command available to make a list of books to read.
+
+
+
+EXPERIMENT 8 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find me an easy yoga routine.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 9 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Lock the front door.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 10 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How's the traffic to work?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 11 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How many calories are in an apple?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 12 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Cancel my 4 PM appointment.
+OTHER: I'm sorry, but there is no API command available to cancel appointments.
+
+
+
+EXPERIMENT 13 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Lower the volume of the music.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 14 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How's the traffic on the way downtown?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 15 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What movies are playing tonight?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 16 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Correct my posture.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 17 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Execute my morning routine: Turn on lights, brew coffee, and play morning news.
+OTHER: I don't know
+
+
+
+EXPERIMENT 18 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find a recipe for spaghetti bolognese.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 19 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Show me romantic comedies on Netflix.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 20 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Convert 2 miles to kilometers.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 21 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Which company had the highest stock price on June 1, 2023?
+OTHER: I'm sorry, but I can't assist with that.
+
+
+
+EXPERIMENT 22 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How many steps have I walked today?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 23 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Show me movie showtimes near me.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 24 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play my favorite playlist.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 25 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Turn off the bedroom lights.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 26 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Was my package delivered?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 27 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Add bananas and coffee to the shopping list.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 28 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Start a timer for 20 minutes.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 29 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play lullabies.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 30 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Help me find a ramen recipe.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 31 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the flight status of UA 232?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 32 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What is the current market value of my house?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 33 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Check out the latest fashion trends.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 34 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find the stock price of all key companies on June 1, 2023.
+OTHER: I'm sorry, but the current API commands do not support retrieving stock prices for multiple companies at a specific date in the future. The available command for stock prices is: command=stock_price;symbol={symbol}, which only retrieves the current stock price for a single company.
+
+
+
+EXPERIMENT 35 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Identify the largest losers in share prices.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 36 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What do I have on my to-do list?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 37 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Who wrote 'The Great Gatsby'?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 38 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Set an alarm for 6 AM daily.
+OTHER: I'm sorry, but there is no API command available for setting an alarm.
+
+
+
+EXPERIMENT 39 ====
+SCORE: 9
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Send Peter a message on Facebook.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 40 ====
+SCORE: 9
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Book a hotel room in New York.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 41 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Increase the brightness of my screen.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 42 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Give me a trivia question.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 43 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Call my dentist's office.
+OTHER: I'm sorry, but there is no API command available to make phone calls.
+
+
+
+EXPERIMENT 44 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Provide a list of stocks with more than a 5% increase on June 9, 2023.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 45 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Read my text messages.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 46 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Translate "Bom dia" into English.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 47 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Record a voice memo.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 48 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Pull up my health insurance details.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 49 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Book an Uber to the airport.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 50 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Book a table for two at my favorite restaurant.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 51 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Turn on the lights in the living room.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 52 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How far is Miami from here?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 53 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How many yards are in a mile?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 54 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Give me profit margin details for Facebook in June 2023.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 55 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Add milk to my shopping list.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 56 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play the next episode of "The Crown" on Netflix.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 57 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How to tie a bowtie?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 58 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find the best Italian restaurants in the city.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 59 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Show me the best-rated vacuum cleaners on Amazon.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 60 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Reduce stress with an ambient sound playlist.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 61 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play top 10 songs of this week.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 62 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Order a bouquet of roses for delivery.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 63 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Open my email.
+OTHER: I'm sorry, but there is no API command available to open your email.
+
+
+
+EXPERIMENT 64 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find a gluten-free bread recipe.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 65 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the nutritional value of an avocado?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 66 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Call John Doe.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 67 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Order groceries online.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 68 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Create a new playlist on Spotify.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 69 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play relaxing music.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 70 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How's my heart rate?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 71 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Dim the lights.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 72 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the time difference between Los Angeles and Tokyo?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 73 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Teach me the basics of French.
+OTHER: I'm sorry, but there is no API command available for teaching French.
+
+
+
+EXPERIMENT 74 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Turn on the coffee maker.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 75 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How long will it take to get to New York?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 76 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play a Mozart symphony.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 77 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Give me a 5-minute breathing exercise.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 78 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Order a Cabernet Sauvignon from the wine shop.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 79 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Tune into the local radio station.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 80 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find out which company had the highest trading volume on June 5, 2023.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 81 ====
+SCORE: 3
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Text my wife: "I'll be late."
+OTHER: To use the send_email command, I need the email address of your wife. Can you provide it?
+USER: sample@sample.com
+OTHER: command=send_email;message=I'll be late.;subject=Text from husband;recipient_email=sample@sample.com
+
+
+
+EXPERIMENT 82 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play audiobook "Atomic Habits."
+OTHER: I don't know.
+
+
+
+EXPERIMENT 83 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Buy tickets for the new Marvel movie.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 84 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Increase the temperature of the thermostat.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 85 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Add spinach and kale to my shopping cart.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 86 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How much fat is in a Big Mac?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 87 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find a bike route to the park.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 88 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Book a flight to Las Vegas next week.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 89 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the dollar to yen exchange rate?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 90 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Get me the top 5 stocks in the technology sector on June 20, 2023.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 91 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the time in Sydney right now?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 92 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Play 'Game of Thrones' season 3.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 93 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Reschedule my dinner date to next week.
+OTHER: I'm sorry, but there is no API command available to reschedule your dinner date.
+
+
+
+EXPERIMENT 94 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Where's the nearest coffee shop?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 95 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Calculate the square root of 256.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 96 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Tell me the top 3 stocks in terms of price change on June 7, 2023.
+OTHER: I'm sorry, but the current API commands do not support retrieving the top 3 stocks in terms of price change on a specific date.
+
+
+
+EXPERIMENT 97 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Calculate the EPS of Tesla for Q2 2023.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 98 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Tell me a joke.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 99 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Order chinese food for my lunch today.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 100 ====
+SCORE: 1
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How's my portfolio doing?
+OTHER: To check your portfolio, I need the symbol of the stocks you own. Could you please provide them?
+
+
+
+EXPERIMENT 101 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Turn on my tv.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 102 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Call the non-emergency police number.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 103 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Turn on the dishwasher.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 104 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: How's the air quality today?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 105 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Plan a route for my morning jog.
+OTHER: I'm sorry, but there is no API command available for planning a route for a jog.
+
+
+
+EXPERIMENT 106 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Turn off the TV.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 107 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: What's the latest episode of 'The Daily' podcast?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 108 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Call me a taxi.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 109 ====
+SCORE: 3
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Set an alarm for 7 AM tomorrow.
+OTHER: To set an alarm, I need to know the name of the reminder. Can you please provide it?
+USER: meeting
+OTHER: command=create_reminder;name=meeting;date=tomorrow;time=07:00
+
+
+
+EXPERIMENT 110 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Get me directions to the zoo.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 111 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Open the Uber app.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 112 ====
+SCORE: 3
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Set a daily reminder to drink water.
+OTHER: To set a daily reminder, I need to know the time you want to be reminded. Can you please provide the time?
+USER: 12:00
+OTHER: command=create_reminder;name=Drink Water;date=daily;time=12:00
+
+
+
+EXPERIMENT 113 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Order Chinese from the nearest restaurant.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 114 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Who won the football game last night?
+OTHER: I don't know.
+
+
+
+EXPERIMENT 115 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Find the best route to the airport.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 116 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Help me find a new job.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 117 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Convert 200 dollars to euros.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 118 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Make me coffe.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 119 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: Give motivational quotes.
+OTHER: I don't know.
+
+
+
+EXPERIMENT 120 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+USER: When's the next basketball game?
+OTHER: I don't know.
+
+=====
+====
+
+

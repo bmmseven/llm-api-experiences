@@ -1,0 +1,15 @@
+=========================================
+|                                                          |
+|       EXPERIMENT WITH LLM TO INTERACT WITH API TOOLS     |
+|                    1687977167588               |
+|                                                          |
+=========================================
+ENVIRONMENT:
+LLM model name: gpt-4
+LLM temperature: 0
+LLM max tokens: 1000
+=========================================
+TESTING SYSTEM PROMPT: autogptprompt_zeroshot.txt
+
+
+EXPERIMENT 1 ====

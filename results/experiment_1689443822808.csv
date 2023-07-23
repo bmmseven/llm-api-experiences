@@ -1,0 +1,2 @@
+llm_model,temperature,system_prompt,user_prompt,score
+openai/gpt-4-0613,0,aigenerated_13.txt,CONVERT_TEXT_TO_SPEECH.txt - 0,3
