@@ -1,6 +1,6 @@
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}

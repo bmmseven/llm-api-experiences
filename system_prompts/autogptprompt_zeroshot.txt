@@ -1,5 +1,5 @@
 Commands:
-1. send an email: send_email, args: email_recipient: <email_address>, subject: <string>, message: <string>
+1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
 2. create an event in user calendar: create_calendar_event, args: date: <YYYY-MM-DD>, time: <HH:mm>, event_name: <string>
 3. get events for a specific date: get_calendar_events, args: date: <YYYY-MM-DD>
 4. create a reminder for the user: create_reminder, args: date: <YYYY-MM-DD>, time: <HH:mm>, text: <string>

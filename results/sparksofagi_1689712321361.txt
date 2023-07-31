@@ -2209,7 +2209,7 @@ This will return all the events for November 11, 2023. You would then need to ma
 
 
 EXPERIMENT 94 ====
-SCORE: 
+SCORE: 0
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.

@@ -11,7 +11,7 @@ LLM max tokens: 1000
 ============================================================
 TESTING SYSTEM PROMPT: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -35,7 +35,7 @@ EXPERIMENT 1 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -64,7 +64,7 @@ EXPERIMENT 2 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -91,7 +91,7 @@ EXPERIMENT 3 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -120,7 +120,7 @@ EXPERIMENT 4 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -147,7 +147,7 @@ EXPERIMENT 5 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -174,7 +174,7 @@ EXPERIMENT 6 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -201,7 +201,7 @@ EXPERIMENT 7 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -228,7 +228,7 @@ EXPERIMENT 8 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -255,7 +255,7 @@ EXPERIMENT 9 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -282,7 +282,7 @@ EXPERIMENT 10 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -309,7 +309,7 @@ EXPERIMENT 11 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -336,7 +336,7 @@ EXPERIMENT 12 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -363,7 +363,7 @@ EXPERIMENT 13 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -390,7 +390,7 @@ EXPERIMENT 14 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -417,7 +417,7 @@ EXPERIMENT 15 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -444,7 +444,7 @@ EXPERIMENT 16 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -471,7 +471,7 @@ EXPERIMENT 17 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -498,7 +498,7 @@ EXPERIMENT 18 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -525,7 +525,7 @@ EXPERIMENT 19 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -552,7 +552,7 @@ EXPERIMENT 20 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -579,7 +579,7 @@ EXPERIMENT 21 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -612,7 +612,7 @@ EXPERIMENT 22 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -645,7 +645,7 @@ EXPERIMENT 23 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -678,7 +678,7 @@ EXPERIMENT 24 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -711,7 +711,7 @@ EXPERIMENT 25 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -744,7 +744,7 @@ EXPERIMENT 26 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -777,7 +777,7 @@ EXPERIMENT 27 ====
 SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -809,7 +809,7 @@ EXPERIMENT 28 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -838,7 +838,7 @@ EXPERIMENT 29 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -867,7 +867,7 @@ EXPERIMENT 30 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -898,7 +898,7 @@ EXPERIMENT 31 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -927,7 +927,7 @@ EXPERIMENT 32 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -956,7 +956,7 @@ EXPERIMENT 33 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -983,7 +983,7 @@ EXPERIMENT 34 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1012,7 +1012,7 @@ EXPERIMENT 35 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1041,7 +1041,7 @@ EXPERIMENT 36 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1068,7 +1068,7 @@ EXPERIMENT 37 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1095,7 +1095,7 @@ EXPERIMENT 38 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1122,7 +1122,7 @@ EXPERIMENT 39 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1149,7 +1149,7 @@ EXPERIMENT 40 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1178,7 +1178,7 @@ EXPERIMENT 41 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1207,7 +1207,7 @@ EXPERIMENT 42 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1234,7 +1234,7 @@ EXPERIMENT 43 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1261,7 +1261,7 @@ EXPERIMENT 44 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1288,7 +1288,7 @@ EXPERIMENT 45 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1315,7 +1315,7 @@ EXPERIMENT 46 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1344,7 +1344,7 @@ EXPERIMENT 47 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1371,7 +1371,7 @@ EXPERIMENT 48 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1398,7 +1398,7 @@ EXPERIMENT 49 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1425,7 +1425,7 @@ EXPERIMENT 50 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1452,7 +1452,7 @@ EXPERIMENT 51 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1479,7 +1479,7 @@ EXPERIMENT 52 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1508,7 +1508,7 @@ EXPERIMENT 53 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1535,7 +1535,7 @@ EXPERIMENT 54 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1562,7 +1562,7 @@ EXPERIMENT 55 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1589,7 +1589,7 @@ EXPERIMENT 56 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1616,7 +1616,7 @@ EXPERIMENT 57 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1643,7 +1643,7 @@ EXPERIMENT 58 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1670,7 +1670,7 @@ EXPERIMENT 59 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1697,7 +1697,7 @@ EXPERIMENT 60 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1724,7 +1724,7 @@ EXPERIMENT 61 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1751,7 +1751,7 @@ EXPERIMENT 62 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1778,7 +1778,7 @@ EXPERIMENT 63 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1805,7 +1805,7 @@ EXPERIMENT 64 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1832,7 +1832,7 @@ EXPERIMENT 65 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1859,7 +1859,7 @@ EXPERIMENT 66 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1886,7 +1886,7 @@ EXPERIMENT 67 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1913,7 +1913,7 @@ EXPERIMENT 68 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1940,7 +1940,7 @@ EXPERIMENT 69 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1967,7 +1967,7 @@ EXPERIMENT 70 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -1996,7 +1996,7 @@ EXPERIMENT 71 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2023,7 +2023,7 @@ EXPERIMENT 72 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2050,7 +2050,7 @@ EXPERIMENT 73 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2077,7 +2077,7 @@ EXPERIMENT 74 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2104,7 +2104,7 @@ EXPERIMENT 75 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2131,7 +2131,7 @@ EXPERIMENT 76 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2158,7 +2158,7 @@ EXPERIMENT 77 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2185,7 +2185,7 @@ EXPERIMENT 78 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2212,7 +2212,7 @@ EXPERIMENT 79 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2239,7 +2239,7 @@ EXPERIMENT 80 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2266,7 +2266,7 @@ EXPERIMENT 81 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2293,7 +2293,7 @@ EXPERIMENT 82 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2320,7 +2320,7 @@ EXPERIMENT 83 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2347,7 +2347,7 @@ EXPERIMENT 84 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2378,7 +2378,7 @@ EXPERIMENT 85 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2405,7 +2405,7 @@ EXPERIMENT 86 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2432,7 +2432,7 @@ EXPERIMENT 87 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2459,7 +2459,7 @@ EXPERIMENT 88 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2488,7 +2488,7 @@ EXPERIMENT 89 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2515,7 +2515,7 @@ EXPERIMENT 90 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2542,7 +2542,7 @@ EXPERIMENT 91 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2573,7 +2573,7 @@ EXPERIMENT 92 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2600,7 +2600,7 @@ EXPERIMENT 93 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2627,7 +2627,7 @@ EXPERIMENT 94 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2658,7 +2658,7 @@ EXPERIMENT 95 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2691,7 +2691,7 @@ EXPERIMENT 96 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2720,7 +2720,7 @@ EXPERIMENT 97 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2747,7 +2747,7 @@ EXPERIMENT 98 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2776,7 +2776,7 @@ EXPERIMENT 99 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2803,7 +2803,7 @@ EXPERIMENT 100 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2834,7 +2834,7 @@ EXPERIMENT 101 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2861,7 +2861,7 @@ EXPERIMENT 102 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2888,7 +2888,7 @@ EXPERIMENT 103 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2915,7 +2915,7 @@ EXPERIMENT 104 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2942,7 +2942,7 @@ EXPERIMENT 105 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2969,7 +2969,7 @@ EXPERIMENT 106 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -2996,7 +2996,7 @@ EXPERIMENT 107 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3023,7 +3023,7 @@ EXPERIMENT 108 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3050,7 +3050,7 @@ EXPERIMENT 109 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3077,7 +3077,7 @@ EXPERIMENT 110 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3104,7 +3104,7 @@ EXPERIMENT 111 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3131,7 +3131,7 @@ EXPERIMENT 112 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3158,7 +3158,7 @@ EXPERIMENT 113 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3185,7 +3185,7 @@ EXPERIMENT 114 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3212,7 +3212,7 @@ EXPERIMENT 115 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3239,7 +3239,7 @@ EXPERIMENT 116 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3266,7 +3266,7 @@ EXPERIMENT 117 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3293,7 +3293,7 @@ EXPERIMENT 118 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3320,7 +3320,7 @@ EXPERIMENT 119 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3347,7 +3347,7 @@ EXPERIMENT 120 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3376,7 +3376,7 @@ EXPERIMENT 121 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3405,7 +3405,7 @@ EXPERIMENT 122 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3432,7 +3432,7 @@ EXPERIMENT 123 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3459,7 +3459,7 @@ EXPERIMENT 124 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3486,7 +3486,7 @@ EXPERIMENT 125 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3513,7 +3513,7 @@ EXPERIMENT 126 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3540,7 +3540,7 @@ EXPERIMENT 127 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3567,7 +3567,7 @@ EXPERIMENT 128 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3594,7 +3594,7 @@ EXPERIMENT 129 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3621,7 +3621,7 @@ EXPERIMENT 130 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3648,7 +3648,7 @@ EXPERIMENT 131 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3675,7 +3675,7 @@ EXPERIMENT 132 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3702,7 +3702,7 @@ EXPERIMENT 133 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3729,7 +3729,7 @@ EXPERIMENT 134 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3756,7 +3756,7 @@ EXPERIMENT 135 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3783,7 +3783,7 @@ EXPERIMENT 136 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3810,7 +3810,7 @@ EXPERIMENT 137 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3837,7 +3837,7 @@ EXPERIMENT 138 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3864,7 +3864,7 @@ EXPERIMENT 139 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3891,7 +3891,7 @@ EXPERIMENT 140 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3918,7 +3918,7 @@ EXPERIMENT 141 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3945,7 +3945,7 @@ EXPERIMENT 142 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3972,7 +3972,7 @@ EXPERIMENT 143 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -3999,7 +3999,7 @@ EXPERIMENT 144 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4028,7 +4028,7 @@ EXPERIMENT 145 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4055,7 +4055,7 @@ EXPERIMENT 146 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4082,7 +4082,7 @@ EXPERIMENT 147 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4111,7 +4111,7 @@ EXPERIMENT 148 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4140,7 +4140,7 @@ EXPERIMENT 149 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4167,7 +4167,7 @@ EXPERIMENT 150 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4194,7 +4194,7 @@ EXPERIMENT 151 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4221,7 +4221,7 @@ EXPERIMENT 152 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4248,7 +4248,7 @@ EXPERIMENT 153 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4277,7 +4277,7 @@ EXPERIMENT 154 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4304,7 +4304,7 @@ EXPERIMENT 155 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4333,7 +4333,7 @@ EXPERIMENT 156 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4360,7 +4360,7 @@ EXPERIMENT 157 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4389,7 +4389,7 @@ EXPERIMENT 158 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4418,7 +4418,7 @@ EXPERIMENT 159 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4445,7 +4445,7 @@ EXPERIMENT 160 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4472,7 +4472,7 @@ EXPERIMENT 161 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4499,7 +4499,7 @@ EXPERIMENT 162 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4526,7 +4526,7 @@ EXPERIMENT 163 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4553,7 +4553,7 @@ EXPERIMENT 164 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4580,7 +4580,7 @@ EXPERIMENT 165 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4607,7 +4607,7 @@ EXPERIMENT 166 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4634,7 +4634,7 @@ EXPERIMENT 167 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4661,7 +4661,7 @@ EXPERIMENT 168 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4688,7 +4688,7 @@ EXPERIMENT 169 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4715,7 +4715,7 @@ EXPERIMENT 170 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4742,7 +4742,7 @@ EXPERIMENT 171 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4769,7 +4769,7 @@ EXPERIMENT 172 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4796,7 +4796,7 @@ EXPERIMENT 173 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4823,7 +4823,7 @@ EXPERIMENT 174 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4850,7 +4850,7 @@ EXPERIMENT 175 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4877,7 +4877,7 @@ EXPERIMENT 176 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4904,7 +4904,7 @@ EXPERIMENT 177 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4931,7 +4931,7 @@ EXPERIMENT 178 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4958,7 +4958,7 @@ EXPERIMENT 179 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -4985,7 +4985,7 @@ EXPERIMENT 180 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5012,7 +5012,7 @@ EXPERIMENT 181 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5039,7 +5039,7 @@ EXPERIMENT 182 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5066,7 +5066,7 @@ EXPERIMENT 183 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5093,7 +5093,7 @@ EXPERIMENT 184 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5120,7 +5120,7 @@ EXPERIMENT 185 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5151,7 +5151,7 @@ EXPERIMENT 186 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5178,7 +5178,7 @@ EXPERIMENT 187 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5205,7 +5205,7 @@ EXPERIMENT 188 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5232,7 +5232,7 @@ EXPERIMENT 189 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5259,7 +5259,7 @@ EXPERIMENT 190 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5290,7 +5290,7 @@ EXPERIMENT 191 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5317,7 +5317,7 @@ EXPERIMENT 192 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5344,7 +5344,7 @@ EXPERIMENT 193 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5371,7 +5371,7 @@ EXPERIMENT 194 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5400,7 +5400,7 @@ EXPERIMENT 195 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5427,7 +5427,7 @@ EXPERIMENT 196 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5456,7 +5456,7 @@ EXPERIMENT 197 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5483,7 +5483,7 @@ EXPERIMENT 198 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5510,7 +5510,7 @@ EXPERIMENT 199 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5537,7 +5537,7 @@ EXPERIMENT 200 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5564,7 +5564,7 @@ EXPERIMENT 201 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5591,7 +5591,7 @@ EXPERIMENT 202 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5618,7 +5618,7 @@ EXPERIMENT 203 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5647,7 +5647,7 @@ EXPERIMENT 204 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5668,7 +5668,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Can you do me a favor and send an e-mail for me?
 AI: Of course, I can help with that. I need some information from you first. Could you please provide the recipient's email address, the subject of the email, and the message you want to send?
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Next week meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Next week meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5676,7 +5676,7 @@ EXPERIMENT 205 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5701,7 +5701,7 @@ AI: Sure, I can help with that. Could you please provide the following details?
 2. The subject of the email
 3. The message you want to send
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Next week meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Next week meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5709,7 +5709,7 @@ EXPERIMENT 206 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5730,7 +5730,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Can you take charge of sending an e-mail for me?
 AI: Sure, I can help with that. I need some information from you first. Could you please provide the recipient's email address, the subject of the email, and the message you want to send?
 AI: John, john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Next week meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Next week meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5738,7 +5738,7 @@ EXPERIMENT 207 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5759,7 +5759,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Could you please draft an email with the subject "Tomorrow's meeting" and send it out for me?
 AI: Sure, I can help with that. Could you please provide me with the content of the email and the recipient's email address?
 AI: john@gmail.com,  Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5767,7 +5767,7 @@ EXPERIMENT 208 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5788,7 +5788,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Would you mind sending an email regarding tomorrow's meeting with the subject line "Tomorrow's meeting"?
 AI: Sure, I can help with that. Could you please provide me with the content of the email and the recipient's email address?
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5796,7 +5796,7 @@ EXPERIMENT 209 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5817,7 +5817,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Please send an email with the subject "Tomorrow's meeting" on my behalf.
 AI: To complete your request, I need the message content and the recipient's email address. Could you please provide these details?
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5825,7 +5825,7 @@ EXPERIMENT 210 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5846,7 +5846,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: I'd appreciate it if you could send an email with the subject line "Tomorrow's meeting."
 AI: Sure, I can help with that. Could you please provide me with the content of the message and the recipient's email address?
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5854,7 +5854,7 @@ EXPERIMENT 211 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5875,7 +5875,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Kindly prepare and send an email with "Tomorrow's meeting" as the subject.
 AI: To complete your request, I need the message content and the recipient's email address. Could you please provide these details?
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5883,7 +5883,7 @@ EXPERIMENT 212 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5910,7 +5910,7 @@ EXPERIMENT 213 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5934,7 +5934,7 @@ AI: Sure, I can help with that. Could you please provide me with the following d
 1. The recipient's email address.
 2. The content of the message you want to send.
 AI: john@gmail.com, next week meeting, Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -5942,7 +5942,7 @@ EXPERIMENT 214 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5963,7 +5963,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Can you please send an email to john@sample.com with the subject "Tomorrow's meeting"?
 AI: Sure, could you please provide the content of the email?
 AI: Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
@@ -5971,7 +5971,7 @@ EXPERIMENT 215 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -5992,7 +5992,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Could you kindly dispatch an email to john@sample.com and use the subject line "Tomorrow's meeting"?
 AI: Sure, could you please provide the content of the email?
 AI: Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
@@ -6000,7 +6000,7 @@ EXPERIMENT 216 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -6021,7 +6021,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: I'd appreciate it if you could forward an email to john@sample.com concerning "Tomorrow's meeting".
 AI: Sure, could you please provide the content of the email?
 AI: john@gmail.com, Hej, greating
-AI: `command=send_email;message=Hej, greating;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
+AI: `command=SEND_EMAIL;message=Hej, greating;subject=Tomorrow's meeting;recipient_email=john@gmail.com`
 
 
 
@@ -6029,7 +6029,7 @@ EXPERIMENT 217 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -6050,7 +6050,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Would you mind sending an email to john@sample.com and titling it "Tomorrow's meeting"?
 AI: Sure, could you please provide the content of the email?
 AI: Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
@@ -6058,7 +6058,7 @@ EXPERIMENT 218 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -6077,7 +6077,7 @@ User Request: Create a reminder for tomorrow to buy milk in the morning
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
 AI: Please shoot off an email to john@sample.com regarding "Tomorrow's meeting".
-AI: `command=send_email;message=Regarding Tomorrow's meeting;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Regarding Tomorrow's meeting;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
@@ -6085,7 +6085,7 @@ EXPERIMENT 219 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -6106,7 +6106,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: I need you to send an email to john@sample.com with the subject "Tomorrow's meeting" as soon as possible.
 AI: Sure, I can help with that. Could you please provide the content of the email?
 AI: Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
@@ -6114,7 +6114,7 @@ EXPERIMENT 220 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -6135,7 +6135,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Be so kind as to email john@sample.com and use "Tomorrow's meeting" as the subject line.
 AI: Sure, could you please provide the message you want to send?
 AI: Hej, how are you?
-AI: `command=send_email;message=Hej, how are you?;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Hej, how are you?;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
@@ -6143,7 +6143,7 @@ EXPERIMENT 221 ====
 SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
-1. command=send_email;message={message};subject={subject};recipient_email={recipient_email}
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
 3. command=get_calendar_events;date={date}
 4. command=create_calendar_event;name={name};date={date};time={time}
@@ -6164,7 +6164,7 @@ GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 AI: Please take a moment to send an email to john@sample.com with a subject mentioning "Tomorrow's meeting".
 AI: Sure, could you please provide the content of the email?
 AI: Hey, the meeting is canseled.
-AI: `command=send_email;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
+AI: `command=SEND_EMAIL;message=Hey, the meeting is canceled.;subject=Tomorrow's meeting;recipient_email=john@sample.com`
 
 
 
