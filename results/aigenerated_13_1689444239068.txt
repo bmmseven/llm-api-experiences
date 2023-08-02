@@ -715,7 +715,7 @@ CreateCalendarEvent("supervision", "next Monday", "15:00")
 
 
 EXPERIMENT 30 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -742,7 +742,7 @@ CreateCalendarEvent("supervision", "next Monday", "15:00")
 
 
 EXPERIMENT 31 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -766,7 +766,7 @@ CreateCalendarEvent("test", "2022-04-11", "12:00")
 
 
 EXPERIMENT 32 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -814,7 +814,7 @@ CreateCalendarEvent("supervision", "2023-07-05", "12:00")
 
 
 EXPERIMENT 34 ====
-SCORE: 0
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -838,7 +838,7 @@ CreateCalendarEvent("testing", "next Monday's date in YYYY-MM-DD format", "12:00
 
 
 EXPERIMENT 35 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -862,7 +862,7 @@ CreateCalendarEvent("meeting", "next Monday", "12:00")
 
 
 EXPERIMENT 36 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -888,7 +888,7 @@ AI: I'm sorry for the confusion, but "next Monday" is not in the correct format.
 
 
 EXPERIMENT 37 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -942,7 +942,7 @@ CreateCalendarEvent("Lunch with my friend", "2013-08-08", "12:00")
 
 
 EXPERIMENT 39 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -969,7 +969,7 @@ CreateCalendarEvent("Lunch with John", "2022-04-11", "12:00");
 
 
 EXPERIMENT 40 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -1921,7 +1921,7 @@ GetCalendarEvents('2023-07-12')
 
 
 EXPERIMENT 82 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -2241,7 +2241,7 @@ GetCalendarEvents("2023-05-04")
 
 
 EXPERIMENT 95 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -2324,7 +2324,7 @@ GetCalendarEvents("2023-12-12")
 
 
 EXPERIMENT 98 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4226,7 +4226,7 @@ AI: It seems like you're referring to the command number 3 which is GetCalendarE
 
 
 EXPERIMENT 181 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4246,7 +4246,7 @@ AI: I'm sorry, but I don't have an API command to order food. I can assist you w
 
 
 EXPERIMENT 182 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4266,7 +4266,7 @@ AI: I'm sorry, but none of the available API commands support retrieving informa
 
 
 EXPERIMENT 183 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4306,7 +4306,7 @@ AI: To answer your question, I need to use the GetStockPrice API command. Howeve
 
 
 EXPERIMENT 185 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4374,7 +4374,7 @@ GetStockPrice("UBER");
 
 
 EXPERIMENT 188 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4394,7 +4394,7 @@ AI: I'm sorry, but none of the available API commands can provide information ab
 
 
 EXPERIMENT 189 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4414,7 +4414,7 @@ AI: I'm sorry for the confusion, but the available API commands don't support fe
 
 
 EXPERIMENT 190 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4434,7 +4434,7 @@ AI: I'm sorry, but I can only retrieve the stock price for one company at a time
 
 
 EXPERIMENT 191 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4478,7 +4478,7 @@ GetStockPrice("PEP");
 
 
 EXPERIMENT 193 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4498,7 +4498,7 @@ AI: I'm sorry, but the available API commands do not support fetching the top st
 
 
 EXPERIMENT 194 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4540,7 +4540,7 @@ GetStockPrice("TSLA");
 
 
 EXPERIMENT 196 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4560,7 +4560,7 @@ AI: I'm sorry, but the available API commands do not support retrieving the mark
 
 
 EXPERIMENT 197 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4580,7 +4580,7 @@ AI: I'm sorry, but the available API commands do not support retrieving the 52-w
 
 
 EXPERIMENT 198 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4626,7 +4626,7 @@ GetStockPrice("AMZN")
 
 
 EXPERIMENT 200 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4646,7 +4646,7 @@ AI: I'm sorry, but I don't have a specific API command to get profit margin deta
 
 
 EXPERIMENT 201 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
