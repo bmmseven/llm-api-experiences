@@ -274,7 +274,7 @@ OTHER: command=convert_text_to_speech;text=Góðan dag;language_code=is;gender=m
 
 
 EXPERIMENT 12 ====
-SCORE: 2
+SCORE: 3
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -659,7 +659,7 @@ OTHER: command=create_calendar_event;name=meeting;date=2023-02-12;time=12:00
 
 
 EXPERIMENT 28 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -683,7 +683,7 @@ OTHER: command=create_calendar_event;name=meeting;date=next Monday;time=12:00
 
 
 EXPERIMENT 29 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -707,7 +707,7 @@ OTHER: command=create_calendar_event;name=meeting;date=next Monday;time=12:00
 
 
 EXPERIMENT 20 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -731,7 +731,7 @@ OTHER: command=create_calendar_event;name=meeting;date=next Monday;time=12:00
 
 
 EXPERIMENT 21 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -755,7 +755,7 @@ OTHER: command=create_calendar_event;name=meeting;date=next Monday;time=12:00
 
 
 EXPERIMENT 22 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -779,7 +779,7 @@ OTHER: command=create_calendar_event;name=meeting;date=next Monday;time=12 PM
 
 
 EXPERIMENT 23 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -829,7 +829,7 @@ OTHER: command=get_calendar_events;date=2023-02-12
 
 
 EXPERIMENT 25 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -877,7 +877,7 @@ OTHER: command=create_calendar_event;name=meeting;date=2023-02-12;time=12:00
 
 
 EXPERIMENT 27 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -925,7 +925,7 @@ OTHER: command=create_calendar_event;name=Lunch with friend;date=2023-02-12;time
 
 
 EXPERIMENT 29 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1385,7 +1385,7 @@ OTHER: command=create_reminder;name=call my grandparents;date=2027-04-16;time=2:
 
 
 EXPERIMENT 59 ====
-SCORE: 1
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1649,7 +1649,7 @@ OTHER: command=generate_image;text_prompt=A family enjoying a barbecue in their 
 
 
 EXPERIMENT 71 ====
-SCORE: 0
+SCORE: 1
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1715,7 +1715,7 @@ OTHER: command=generate_image;text_prompt=quaint streetscape in Paris in June 20
 
 
 EXPERIMENT 74 ====
-SCORE: 0
+SCORE: 1
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1737,7 +1737,7 @@ OTHER: I don't know
 
 
 EXPERIMENT 75 ====
-SCORE: 0
+SCORE: 1
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1847,7 +1847,7 @@ OTHER: command=generate_image;text_prompt=An incredible scene of a superyacht sa
 
 
 EXPERIMENT 80 ====
-SCORE: 0
+SCORE: 1
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1869,7 +1869,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 81 ====
-SCORE: 2
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1919,7 +1919,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 83 ====
-SCORE: 1
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1941,7 +1941,7 @@ OTHER: I'm sorry, but I can't provide the information you're looking for.
 
 
 EXPERIMENT 84 ====
-SCORE: 3
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -1963,7 +1963,7 @@ OTHER: I'm sorry, but the current API commands do not support filtering calendar
 
 
 EXPERIMENT 85 ====
-SCORE: 1
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -2057,7 +2057,7 @@ command=get_calendar_events;date=2023-09-04
 
 
 EXPERIMENT 89 ====
-SCORE: 3
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -2105,7 +2105,7 @@ OTHER: command=get_calendar_events;date=2023-07-21
 
 
 EXPERIMENT 91 ====
-SCORE: 3
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -2173,7 +2173,7 @@ command=get_calendar_events;date=2023-11-11
 
 
 EXPERIMENT 94 ====
-SCORE: 2
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -2199,7 +2199,7 @@ Please replace {date} with the specific date in the format YYYY-MM-DD.
 
 
 EXPERIMENT 95 ====
-SCORE: 3
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -2313,7 +2313,7 @@ OTHER: command=get_calendar_events;date=2023-11-23
 
 
 EXPERIMENT 100 ====
-SCORE: 2
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -3277,7 +3277,7 @@ command=get_news;country=United States;date=2023-12-01
 
 
 EXPERIMENT 142 ====
-SCORE: 33
+SCORE: 3
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -3613,7 +3613,7 @@ OTHER: command=get_news;country=Russia;date=2023-08-06
 
 
 EXPERIMENT 156 ====
-SCORE: 2
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -3727,7 +3727,7 @@ OTHER: command=get_news;country=Singapore;date=2023-05-09
 
 
 EXPERIMENT 161 ====
-SCORE: 1
+SCORE: 3
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -5011,7 +5011,7 @@ OTHER: I'm sorry, but there is no API command available for setting an alarm.
 
 
 EXPERIMENT 219 ====
-SCORE: 9
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -5033,7 +5033,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 220 ====
-SCORE: 9
+SCORE: 0
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -6355,7 +6355,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 280 ====
-SCORE: 1
+SCORE: 3
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
