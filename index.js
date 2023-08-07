@@ -17,6 +17,11 @@ import {
 import dotenv from "dotenv";
 dotenv.config();
 keypress(input);
+
+//Insert here the inference API url for each model
+const huggingFaceModelsUrls = {
+  default: "https://api-inference.huggingface.co/models/",
+}
 // Include list of API commands
 
 // Loop through list of promts
@@ -59,6 +64,7 @@ const modelOptions = [
   "openai/gpt-3.5-turbo-16k",
   "openai/gpt-3.5-turbo-16k-0613",
   "google/palm/chat-bison",
+  "upstage/Llama-2-70b-instruct-v2",
   "stabilityai/stablelm-tuned-alpha-7b", //TODO: Implement this one
   "stabilityai/stablelm-base-alpha-7b", //TODO: Implement this one
 ];
@@ -229,7 +235,8 @@ fileStream.once("open", async function (fd) {
             chatMemory,
             modelName,
             modelTemperature,
-            process.env.HUGGINGFACEHUB_API_KEY
+            process.env.HUGGINGFACEHUB_API_KEY,
+            huggingFaceModelsUrls
           );
         }
         //console.log(res);
