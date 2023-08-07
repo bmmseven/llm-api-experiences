@@ -774,7 +774,7 @@ AI: `command=create_calendar_event;name=supervision;date=2023-07-04;time=13:00`
 
 
 EXPERIMENT 27 ====
-SCORE: 0
+SCORE: 3
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -835,7 +835,7 @@ AI: `command=create_calendar_event;name=supervision;date=2023-07-04;time=13:00`
 
 
 EXPERIMENT 29 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -864,7 +864,7 @@ AI: `command=create_calendar_event;name=Supervision;date=2023-04-24;time=13:00`
 
 
 EXPERIMENT 30 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -895,7 +895,7 @@ AI: I'm sorry, but your request is not clear. Could you please provide more deta
 
 
 EXPERIMENT 31 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -924,7 +924,7 @@ AI: `command=create_calendar_event;name=meeting;date=2023-04-24;time=12:00`
 
 
 EXPERIMENT 32 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -953,7 +953,7 @@ AI: `command=create_calendar_event;name=supervision;date=2023-04-24;time=12:00`
 
 
 EXPERIMENT 33 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -980,7 +980,7 @@ AI: `command=create_calendar_event;name=Event;date=2023-04-24;time=12:00`
 
 
 EXPERIMENT 34 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1009,7 +1009,7 @@ AI: `command=create_calendar_event;name=Meeting;date=2023-04-24;time=12:00`
 
 
 EXPERIMENT 35 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1038,7 +1038,7 @@ AI: `command=create_calendar_event;name=supervison;date=2023-04-24;time=12:00`
 
 
 EXPERIMENT 36 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1065,7 +1065,7 @@ AI: `command=create_calendar_event;name=Event;date=2023-04-24;time=12:00`
 
 
 EXPERIMENT 37 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1092,7 +1092,7 @@ AI: `command=create_calendar_event;name=Lunch with friend;date=2023-04-24;time=1
 
 
 EXPERIMENT 38 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1119,7 +1119,7 @@ AI: `command=create_calendar_event;name=Lunch with friend;date=2023-04-24;time=1
 
 
 EXPERIMENT 39 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1146,7 +1146,7 @@ AI: `command=create_calendar_event;name=Lunch with friend;date=2023-04-24;time=1
 
 
 EXPERIMENT 40 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -1993,7 +1993,7 @@ AI: Your request is not clear. Could you please provide more details?
 
 
 EXPERIMENT 71 ====
-SCORE: 3
+SCORE: 1
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2074,7 +2074,7 @@ AI: `command=generate_image;text_prompt=A quaint streetscape in Paris in June 20
 
 
 EXPERIMENT 74 ====
-SCORE: 3
+SCORE: 1
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2263,7 +2263,7 @@ AI: command=generate_image;text_prompt=Multi-purpose smartwatch with advanced fe
 
 
 EXPERIMENT 81 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2290,7 +2290,7 @@ AI: GPT-4: `command=get_calendar_events;date=2023-07`
 
 
 EXPERIMENT 82 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2317,7 +2317,7 @@ AI: GPT-4: `command=get_calendar_events;date=2023-01`
 
 
 EXPERIMENT 83 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2429,7 +2429,7 @@ AI: `command=get_calendar_events;date=2022-12-24`
 
 
 EXPERIMENT 87 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2485,7 +2485,7 @@ command=get_calendar_events;date=2023-09-04
 
 
 EXPERIMENT 89 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2512,7 +2512,7 @@ AI: I'm sorry, but the current API commands do not support filtering events by a
 
 
 EXPERIMENT 90 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2539,7 +2539,7 @@ AI: `command=get_calendar_events;date=2023-04-24`
 
 
 EXPERIMENT 91 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2597,7 +2597,7 @@ AI: `command=get_calendar_events;date=2023-05-29`
 
 
 EXPERIMENT 93 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2624,7 +2624,7 @@ AI: command=get_calendar_events;date=2023-11-11
 
 
 EXPERIMENT 94 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2655,7 +2655,7 @@ Please note that you would need to run this command for each day in May to get a
 
 
 EXPERIMENT 95 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2688,7 +2688,7 @@ Please note that you need to replace the date with the specific date in October 
 
 
 EXPERIMENT 96 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2717,7 +2717,7 @@ AI: I'm sorry, but the available commands do not support filtering events by loc
 
 
 EXPERIMENT 97 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2744,7 +2744,7 @@ AI: `command=get_calendar_events;date=2023-04-29`
 
 
 EXPERIMENT 98 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -2800,7 +2800,7 @@ AI: `command=get_calendar_events;date=2023-11-23`
 
 
 EXPERIMENT 100 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -3915,7 +3915,7 @@ AI: `command=stock_price;symbol=FB`
 
 
 EXPERIMENT 141 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -3942,7 +3942,7 @@ AI: GPT-4: `command=get_news;country=United States;date={current_date}`
 
 
 EXPERIMENT 142 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -3969,7 +3969,7 @@ AI: `command=get_news;country=Canada;date={current_date}`
 
 
 EXPERIMENT 143 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4025,7 +4025,7 @@ AI: `command=get_news;country=Australia;date=2023-04-23`
 
 
 EXPERIMENT 145 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4052,7 +4052,7 @@ AI: GPT-4: `command=get_news;country=Germany;date={current_date}`
 
 
 EXPERIMENT 146 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4137,7 +4137,7 @@ AI: command=get_news;country=UK;date=2023-06-9
 
 
 EXPERIMENT 149 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4164,7 +4164,7 @@ AI: GPT-4: `command=get_news;country=Italy;date={current_date}`
 
 
 EXPERIMENT 150 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4191,7 +4191,7 @@ AI: command=get_news;country=India;date={current_date}
 
 
 EXPERIMENT 151 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4218,7 +4218,7 @@ AI: command=get_news;country=Brazil;date={current_date}
 
 
 EXPERIMENT 152 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4274,7 +4274,7 @@ AI: `command=get_news;country=South Korea;date=2023-06-29`
 
 
 EXPERIMENT 154 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4330,7 +4330,7 @@ AI: `command=get_news;country=Russia;date=2023-05-24`
 
 
 EXPERIMENT 156 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4415,7 +4415,7 @@ AI: command=get_news;country=UAE;date=2023-06-09
 
 
 EXPERIMENT 159 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -4442,7 +4442,7 @@ AI: GPT-4: `command=get_news;country=Argentina;date={current_date}`
 
 
 EXPERIMENT 160 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5009,7 +5009,7 @@ AI: `command=weather;city=Rome;country_code=IT;date=2023-11-19`
 
 
 EXPERIMENT 181 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5036,7 +5036,7 @@ AI: Sorry, I can't assist with that.
 
 
 EXPERIMENT 182 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5063,7 +5063,7 @@ AI: I'm sorry, but I can't assist with that.
 
 
 EXPERIMENT 183 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5117,7 +5117,7 @@ AI: `command=stock_price;symbol=^GSPC;date=2023-06-02`
 
 
 EXPERIMENT 185 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5202,7 +5202,7 @@ AI: `command=stock_price;symbol=UBER`
 
 
 EXPERIMENT 188 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5229,7 +5229,7 @@ AI: I'm sorry, but the current API commands do not support retrieving trading vo
 
 
 EXPERIMENT 189 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5256,7 +5256,7 @@ AI: I'm sorry, but the current API commands do not support retrieving multiple s
 
 
 EXPERIMENT 190 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5341,7 +5341,7 @@ AI: `command=stock_price;symbol=PEP`
 
 
 EXPERIMENT 193 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5368,7 +5368,7 @@ AI: I'm sorry, but the current API commands do not support fetching sector-speci
 
 
 EXPERIMENT 194 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5424,7 +5424,7 @@ AI: `command=stock_price;symbol=TSLA`
 
 
 EXPERIMENT 196 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5453,7 +5453,7 @@ AI: To get the market cap for Apple, you would use the stock_price command with 
 
 
 EXPERIMENT 197 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5534,7 +5534,7 @@ AI: `command=stock_price;symbol=AMZN`
 
 
 EXPERIMENT 200 ====
-SCORE: 3
+SCORE: 0
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5561,7 +5561,7 @@ AI: Sorry, but the provided API commands do not support retrieving profit margin
 
 
 EXPERIMENT 201 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
