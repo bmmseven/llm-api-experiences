@@ -45,7 +45,15 @@ export class Utils {
     });
   }
 
-  static async huggingFaceApiCall(chat = [], model, temperature, apiKey) {
+  static async huggingFaceApiCall(
+    chat = [],
+    model,
+    temperature,
+    apiKey,
+    modelsURLS = {
+      default: "https://api-inference.huggingface.co/models/",
+    }
+  ) {
     let input = "";
     //Create the input from the chat
     if (
@@ -56,6 +64,7 @@ export class Utils {
       chat.forEach((message) => {
         console.log("MESSAGE TYPE");
         console.log(message.constructor.name);
+
         if (message.constructor.name == "HumanChatMessage") {
           input += "<|USER|>" + message.text + " ";
         } else if (message.constructor.name == "SystemChatMessage") {
@@ -66,9 +75,26 @@ export class Utils {
           console.warn("Unknown message type");
         }
       });
+      
+    } else if(model == "upstage/Llama-2-70b-instruct-v2") {
+      chat.forEach((message) => {
+        console.log("MESSAGE TYPE");
+        console.log(message.constructor.name);
+        if (message.constructor.name == "HumanChatMessage") {
+          input += "### User:\n" + message.text + "\n";
+        } else if (message.constructor.name == "SystemChatMessage") {
+          input += "### System:\n" + message.text + "\n";
+        } else if (message.constructor.name == "AIChatMessage") {
+          input += "### Assistant:\n" + message.text + "\n";
+        } else {
+          console.warn("Unknown message type");
+        }
+      });
     }
+    console.log("HUGGING FACE RAW PROMPT");
+      console.log(input);
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/" + model,
+      (modelsURLS[model] ?? modelsURLS["default"]) + model,
       {
         headers: {
           Authorization: "Bearer " + apiKey,
@@ -84,7 +110,7 @@ export class Utils {
     );
     const result = await response.json();
     console.log("RESULT");
-    if(result.error) {
+    if (result.error) {
       console.log(result.error);
       return result.error;
     }
