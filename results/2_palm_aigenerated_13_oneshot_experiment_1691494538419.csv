@@ -1,5 +1,4 @@
 llm_model,temperature,system_prompt,user_prompt,score
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,.DS_Store - 0,2
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 0,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 1,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 2,3
