@@ -1,0 +1,368 @@
+============================================================
+|                                                          |
+|       EXPERIMENT WITH LLM TO INTERACT WITH API TOOLS     |
+|                         1691606603105                    |
+|                                                          |
+============================================================
+ENVIRONMENT:
+LLM model name: upstage/Llama-2-70b-instruct-v2
+LLM temperature: 0
+LLM max tokens: 1000
+============================================================
+TESTING SYSTEM PROMPT: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+
+
+EXPERIMENT 1 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Convert the text "Hello World" to speech.
+AI: 
+Command: ConvertTextToSpeech(text, languageCode, gender)
+
+Data:
+
+
+
+EXPERIMENT 2 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Say "Bonjour tout le monde" in French with a male voice.
+AI: 
+To answer this user request, we need to use the ConvertTextToSpeech API command.
+
+
+
+EXPERIMENT 3 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: I want to hear "Guten Tag" in German by a neutral voice.
+AI: 
+Command: ConvertTextToSpeech(text="Guten Tag", languageCode="de",
+
+
+
+EXPERIMENT 4 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Speak the phrase "Olá, tudo bem?" in Portuguese using a neutral voice.
+AI: 
+Command: ConvertTextToSpeech(text,languageCode,gender);
+
+Text:
+
+
+
+EXPERIMENT 5 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Please read "你好，你今天过得怎么样？" in Mandarin Chinese using a male voice.
+AI: 
+To answer this user request, you would need to use the ConvertTextToSpeech API command
+
+
+
+EXPERIMENT 6 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Please read "God dag, hur mår du?" in Swedish using a female voice.
+AI: 
+To answer this user request, you would need to use the ConvertTextToSpeech API command
+
+
+
+EXPERIMENT 7 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Read aloud "Goedemorgen" in Dutch using a neutral voice.
+AI: 
+Command: ConvertTextToSpeech(text,languageCode,gender);
+
+Data:
+
+
+
+EXPERIMENT 8 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Read "สวัสดีครับ" in Thai using a male voice.
+AI: 
+To answer this user request, you would need to use the ConvertTextToSpeech API command
+
+
+
+EXPERIMENT 9 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Please say "Selamat pagi" in Indonesian with a neutral voice.
+AI: 
+Command: ConvertTextToSpeech(text,languageCode,gender);
+
+Text:
+
+
+
+EXPERIMENT 10 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Read "Xin chào" in Vietnamese using a female voice.
+AI: 
+To answer this user request, you would need to use the ConvertTextToSpeech API command
+
+
+
+EXPERIMENT 11 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Say "Góðan dag" in Icelandic with a male voice.
+AI: 
+To answer this user request, we need to use the ConvertTextToSpeech API command.
+
+
+
+EXPERIMENT 12 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Speak the phrase "สวัสดีครับ" in Arabic with a female voice.
+AI: 
+To complete this request, I need to use the ConvertTextToSpeech API command.
+
+
+
+
+EXPERIMENT 13 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Read the text "Selam, nasılsın?" in Turkish using a male voice.
+AI: 
+To answer this user request, you would need to use the ConvertTextToSpeech API command
+
+
+
+EXPERIMENT 14 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Speak "Alo, kijan ou ye?" in Haitian Creole with a male voice.
+AI: 
+To answer this user request, you would need to use the ConvertTextToSpeech API command
+
+
+
+EXPERIMENT 15 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user. If there is no api command available you should answer "I don't know".
+
+1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
+2. GetWeather: GetWeather(city, country_code, date); city: string; country_code: string; date: YYYY-MM-DD
+3. GetCalendarEvents: GetCalendarEvents(date); date: YYYY-MM-DD
+4. CreateCalendarEvent: CreateCalendarEvent(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+5. CreateReminder: CreateReminder(name, date, time); name: string; date: YYYY-MM-DD; time: HH:mm
+6. GetCurrentDateTime: GetCurrentDateTime()
+7. StockPrice: GetStockPrice(stock_symbol); stock_symbol: string
+8. GetTrendingNews: GetTrendingNews(country, date); country: string; date: YYYY-MM-DD
+9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
+10. GenerateImage: GenerateImage(prompt); prompt: string
+
+USER: Convert the text "Hej, hvordan har du det?" to speech in Norwegian with a neutral voice.
+AI: 
+Command: ConvertTextToSpeech(text, languageCode, gender)
+
+Text:
+
+
+
+EXPERIMENT 16 ====
