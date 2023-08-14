@@ -1,5 +1,4 @@
 llm_model,temperature,system_prompt,user_prompt,score
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,.DS_Store - 0,2
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 0,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 1,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 2,3
@@ -20,7 +19,7 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt -
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 17,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 18,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CONVERT_TEXT_TO_SPEECH.txt - 19,1
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 0,3
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 0,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 1,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 2,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 3,3
@@ -38,17 +37,17 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 15,2
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 16,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 17,3
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 18,2
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 19,2
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 0,2
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 1,2
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 18,3
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_CALENDAR_EVENT.txt - 19,3
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 0,3
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 1,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 2,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 3,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 4,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 5,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 6,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 7,3
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 8,2
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 8,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 9,2
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 10,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,CREATE_REMINDER.txt - 11,1
@@ -89,7 +88,7 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 5,
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 6,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 7,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 8,1
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 9,1
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 9,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 10,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 11,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,GET_CALENDAR_EVENTS.txt - 12,1
@@ -209,7 +208,7 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 25,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 26,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 27,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 28,0
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 29,2
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 29,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 30,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 31,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 32,0
@@ -222,7 +221,7 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 38,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 39,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 40,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 41,0
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 42,
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 42,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 43,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 44,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 45,0
@@ -260,7 +259,7 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 76,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 77,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 78,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 79,0
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 80,3
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 80,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 81,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 82,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 83,0
@@ -300,7 +299,7 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 116,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 117,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 118,0
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,NOT_AVAILABLE.txt - 119,0
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 0,1
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 0,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 1,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 2,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 3,3
@@ -319,4 +318,4 @@ google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 15,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 16,1
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 17,3
 google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 18,3
-google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 19,3
+google/palm/chat-bison,0,aigenerated_13_oneshot.txt,SEND_EMAIL.txt - 19,1

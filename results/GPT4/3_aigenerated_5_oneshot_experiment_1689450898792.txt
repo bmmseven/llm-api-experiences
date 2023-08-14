@@ -5013,9 +5013,10 @@ AI: `command=weather;city=Rome;country_code=IT;date=2023-11-19`
 
 
 
-EXPERIMENT 181 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 1 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5028,21 +5029,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Order chinese food for my lunch today.
-AI: Sorry, but I can't assist with that.
+USER: Where's the nearest sushi place?
+AI: I don't know.
 
 
 
-EXPERIMENT 182 ====
+EXPERIMENT 2 ====
 SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5055,21 +5057,2576 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Identify the largest losers in share prices.
+USER: Will it rain tomorrow?
+AI: To answer your question, I need to know the city and country code where you are located. Could you please provide this information?
+USER: Addis abeba
+AI: `command=weather;city=Addis Abeba;country_code=ET;date=tomorrow`
+
+
+
+EXPERIMENT 3 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What's the closest ATM from here?
+AI: I don't know.
+
+
+
+EXPERIMENT 4 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Start a 20-minute nap timer.
+AI: I'm sorry, but there is no API command available to start a nap timer.
+
+
+
+EXPERIMENT 5 ====
+SCORE: 
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Order pizza from Dominos.
+AI: I don't know.
+
+
+
+EXPERIMENT 6 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find the fastest way to get to JFK Airport.
+AI: I don't know.
+
+
+
+EXPERIMENT 7 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Make a list of books to read.
+AI: I'm sorry, but there is no API command available to create a list of books to read.
+
+
+
+EXPERIMENT 8 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find me an easy yoga routine.
+AI: I don't know.
+
+
+
+EXPERIMENT 9 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Lock the front door.
+AI: I don't know.
+
+
+
+EXPERIMENT 10 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How's the traffic to work?
+AI: I don't know.
+
+
+
+EXPERIMENT 11 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How many calories are in an apple?
+AI: I don't know.
+
+
+
+EXPERIMENT 12 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Cancel my 4 PM appointment.
+AI: I'm sorry, but there is no API command available to cancel appointments.
+
+
+
+EXPERIMENT 13 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Lower the volume of the music.
+AI: I don't know.
+
+
+
+EXPERIMENT 14 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How's the traffic on the way downtown?
+AI: I don't know.
+
+
+
+EXPERIMENT 15 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What movies are playing tonight?
+AI: I don't know.
+
+
+
+EXPERIMENT 16 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Correct my posture.
+AI: I don't know.
+
+
+
+EXPERIMENT 17 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Execute my morning routine: Turn on lights, brew coffee, and play morning news.
+AI: I don't know.
+
+
+
+EXPERIMENT 18 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find a recipe for spaghetti bolognese.
+AI: I don't know.
+
+
+
+EXPERIMENT 19 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Show me romantic comedies on Netflix.
+AI: I don't know.
+
+
+
+EXPERIMENT 20 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Convert 2 miles to kilometers.
+AI: I don't know.
+
+
+
+EXPERIMENT 21 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Which company had the highest stock price on June 1, 2023?
+AI: I'm sorry, but I can't provide the information you're looking for.
+
+
+
+EXPERIMENT 22 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How many steps have I walked today?
+AI: I don't know.
+
+
+
+EXPERIMENT 23 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Show me movie showtimes near me.
+AI: I don't know.
+
+
+
+EXPERIMENT 24 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play my favorite playlist.
+AI: I don't know.
+
+
+
+EXPERIMENT 25 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Turn off the bedroom lights.
+AI: I don't know.
+
+
+
+EXPERIMENT 26 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Was my package delivered?
+AI: I don't know.
+
+
+
+EXPERIMENT 27 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Add bananas and coffee to the shopping list.
+AI: I don't know.
+
+
+
+EXPERIMENT 28 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Start a timer for 20 minutes.
+AI: I don't know.
+
+
+
+EXPERIMENT 29 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play lullabies.
+AI: I don't know.
+
+
+
+EXPERIMENT 30 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Help me find a ramen recipe.
+AI: I don't know.
+
+
+
+EXPERIMENT 31 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What's the flight status of UA 232?
+AI: I don't know.
+
+
+
+EXPERIMENT 32 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What is the current market value of my house?
+AI: I don't know.
+
+
+
+EXPERIMENT 33 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Check out the latest fashion trends.
+AI: I don't know.
+
+
+
+EXPERIMENT 34 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find the stock price of all key companies on June 1, 2023.
+AI: I'm sorry, but the current API commands only support fetching the stock price for one company at a time. Please provide the symbol of the company you're interested in.
+
+
+
+EXPERIMENT 35 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Identify the largest losers in share prices.
+AI: I'm sorry, but there is no specific API command available to identify the largest losers in share prices.
+
+
+
+EXPERIMENT 36 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What do I have on my to-do list?
+AI: I'm sorry, but there is no API command available to retrieve a to-do list.
+
+
+
+EXPERIMENT 37 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Who wrote 'The Great Gatsby'?
+AI: I don't know.
+
+
+
+EXPERIMENT 38 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Set an alarm for 6 AM daily.
+AI: I don't know.
+
+
+
+EXPERIMENT 39 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Send Peter a message on Facebook.
+AI: I don't know.
+
+
+
+EXPERIMENT 40 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Book a hotel room in New York.
+AI: I don't know.
+
+
+
+EXPERIMENT 41 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Increase the brightness of my screen.
+AI: I don't know.
+
+
+
+EXPERIMENT 42 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Give me a trivia question.
+AI: I don't know.
+
+
+
+EXPERIMENT 43 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Call my dentist's office.
+AI: I'm sorry, but there is no API command available to make phone calls.
+
+
+
+EXPERIMENT 44 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Provide a list of stocks with more than a 5% increase on June 9, 2023.
+AI: I don't know.
+
+
+
+EXPERIMENT 45 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Read my text messages.
+AI: I don't know.
+
+
+
+EXPERIMENT 46 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Translate "Bom dia" into English.
+AI: I don't know.
+
+
+
+EXPERIMENT 47 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Record a voice memo.
+AI: I don't know.
+
+
+
+EXPERIMENT 48 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Pull up my health insurance details.
+AI: I don't know.
+
+
+
+EXPERIMENT 49 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Book an Uber to the airport.
+AI: I don't know.
+
+
+
+EXPERIMENT 50 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Book a table for two at my favorite restaurant.
+AI: I don't know.
+
+
+
+EXPERIMENT 51 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Turn on the lights in the living room.
+AI: I don't know.
+
+
+
+EXPERIMENT 52 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How far is Miami from here?
+AI: I don't know.
+
+
+
+EXPERIMENT 53 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How many yards are in a mile?
+AI: I don't know.
+
+
+
+EXPERIMENT 54 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Give me profit margin details for Facebook in June 2023.
+AI: I don't know.
+
+
+
+EXPERIMENT 55 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Add milk to my shopping list.
+AI: I don't know.
+
+
+
+EXPERIMENT 56 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play the next episode of "The Crown" on Netflix.
+AI: I don't know.
+
+
+
+EXPERIMENT 57 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How to tie a bowtie?
+AI: I don't know.
+
+
+
+EXPERIMENT 58 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find the best Italian restaurants in the city.
+AI: I don't know.
+
+
+
+EXPERIMENT 59 ====
+SCORE: 
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Show me the best-rated vacuum cleaners on Amazon.
+AI: I don't know.
+
+
+
+EXPERIMENT 60 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Reduce stress with an ambient sound playlist.
+AI: I don't know.
+
+
+
+EXPERIMENT 61 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play top 10 songs of this week.
+AI: I don't know.
+
+
+
+EXPERIMENT 62 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Order a bouquet of roses for delivery.
+AI: I don't know.
+
+
+
+EXPERIMENT 63 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Open my email.
+AI: I'm sorry, but there is no API command available to open your email.
+
+
+
+EXPERIMENT 64 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find a gluten-free bread recipe.
+AI: I don't know.
+
+
+
+EXPERIMENT 65 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What's the nutritional value of an avocado?
+AI: I don't know.
+
+
+
+EXPERIMENT 66 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Call John Doe.
+AI: I don't know.
+
+
+
+EXPERIMENT 67 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Order groceries online.
+AI: I'm sorry, but there is no API command available to order groceries online.
+
+
+
+EXPERIMENT 68 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Create a new playlist on Spotify.
+AI: I don't know.
+
+
+
+EXPERIMENT 69 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play relaxing music.
+AI: I don't know.
+
+
+
+EXPERIMENT 70 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How's my heart rate?
+AI: I don't know.
+
+
+
+EXPERIMENT 71 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Dim the lights.
+AI: I don't know.
+
+
+
+EXPERIMENT 72 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What's the time difference between Los Angeles and Tokyo?
+AI: I don't know.
+
+
+
+EXPERIMENT 73 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Teach me the basics of French.
+AI: I'm sorry, but there is no API command available to teach French.
+
+
+
+EXPERIMENT 74 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Turn on the coffee maker.
+AI: I don't know.
+
+
+
+EXPERIMENT 75 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How long will it take to get to New York?
+AI: I don't know.
+
+
+
+EXPERIMENT 76 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play a Mozart symphony.
+AI: I don't know.
+
+
+
+EXPERIMENT 77 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Give me a 5-minute breathing exercise.
+AI: I don't know.
+
+
+
+EXPERIMENT 78 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Order a Cabernet Sauvignon from the wine shop.
+AI: I don't know.
+
+
+
+EXPERIMENT 79 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Tune into the local radio station.
+AI: I don't know.
+
+
+
+EXPERIMENT 80 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find out which company had the highest trading volume on June 5, 2023.
+AI: I don't know.
+
+
+
+EXPERIMENT 81 ====
+SCORE: 2
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Text my wife: "I'll be late."
+AI: `command=SEND_EMAIL;message=I'll be late.;subject=Message to wife;recipient_email=wifes_email@example.com`
+
+
+
+EXPERIMENT 82 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play audiobook "Atomic Habits."
+AI: I don't know.
+
+
+
+EXPERIMENT 83 ====
+SCORE: 3
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Buy tickets for the new Marvel movie.
+AI: To assist you better, could you please provide the date and time you want to buy the tickets?
+USER: 2023-09-09
+AI: And what time would you like to set the reminder for?
+USER: 11:00
+AI: `command=create_reminder;name=Buy tickets for the new Marvel movie;date=2023-09-09;time=11:00`
+
+
+
+EXPERIMENT 84 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Increase the temperature of the thermostat.
+AI: I don't know.
+
+
+
+EXPERIMENT 85 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Add spinach and kale to my shopping cart.
+AI: I don't know.
+
+
+
+EXPERIMENT 86 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: How much fat is in a Big Mac?
+AI: I don't know.
+
+
+
+EXPERIMENT 87 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Find a bike route to the park.
+AI: I don't know.
+
+
+
+EXPERIMENT 88 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Book a flight to Las Vegas next week.
+AI: I'm sorry, but I don't have an API command available to book flights.
+
+
+
+EXPERIMENT 89 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What's the dollar to yen exchange rate?
+AI: I don't know.
+
+
+
+EXPERIMENT 90 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Get me the top 5 stocks in the technology sector on June 20, 2023.
+AI: I don't know.
+
+
+
+EXPERIMENT 91 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: What's the time in Sydney right now?
+AI: I don't know.
+
+
+
+EXPERIMENT 92 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Play 'Game of Thrones' season 3.
+AI: I don't know.
+
+
+
+EXPERIMENT 93 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Reschedule my dinner date to next week.
 AI: I'm sorry, but I can't assist with that.
 
 
 
-EXPERIMENT 183 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 94 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5082,21 +7639,162 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Provide a list of stocks with more than a 5% increase on June 9, 2023.
-AI: I'm sorry, but the current API commands do not support retrieving a list of stocks with a specific increase percentage on a certain date. You can only get the current price of a specific stock using the `stock_price` command.
+USER: Where's the nearest coffee shop?
+AI: I don't know.
 
 
 
-EXPERIMENT 184 ====
+EXPERIMENT 95 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Calculate the square root of 256.
+AI: I don't know.
+
+
+
+EXPERIMENT 96 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Tell me the top 3 stocks in terms of price change on June 7, 2023.
+AI: I'm sorry, but I can't assist with that.
+
+
+
+EXPERIMENT 97 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Calculate the EPS of Tesla for Q2 2023.
+AI: I don't know.
+
+
+
+EXPERIMENT 98 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Tell me a joke.
+AI: I don't know.
+
+
+
+EXPERIMENT 99 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Order chinese food for my lunch today.
+AI: I don't know.
+
+
+
+EXPERIMENT 100 ====
 SCORE: 2
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5109,21 +7807,24 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: How did the S&P 500 perform on June 2, 2023?
-AI: `command=stock_price;symbol=^GSPC;date=2023-06-02`
+USER: How's my portfolio doing?
+AI: I'm sorry, but I need more information to assist with your request. Could you please provide the symbol of the stocks in your portfolio?
+USER: mm
+AI: `command=stock_price;symbol=MM`
 
 
 
-EXPERIMENT 185 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 101 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5136,25 +7837,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Which company had the highest stock price on June 1, 2023?
-AI: I'm sorry, but I can't provide the information you're looking for. My current capabilities allow me to check the stock price of a specific company, but I can't compare multiple companies to determine which had the highest stock price on a specific date. You can use the following command to check the stock price of a specific company:
-
-`command=stock_price;symbol={symbol}`
-
-Please replace `{symbol}` with the stock symbol of the company you're interested in.
+USER: Turn on my tv.
+AI: I don't know.
 
 
 
-EXPERIMENT 186 ====
-SCORE: -1
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 102 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5167,25 +7865,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: On June 25, 2023, what was the closing stock price for IBM?
-AI: `command=stock_price;symbol=IBM;date=2023-06-25`
-AI: -1
-AI: Apologies for the confusion, but the command for retrieving stock prices does not support a specific date parameter. The command can only fetch the current stock price. Here is the correct command:
-
-`command=stock_price;symbol=IBM`
+USER: Call the non-emergency police number.
+AI: I'm sorry, but I don't have an API command for that action.
 
 
 
-EXPERIMENT 187 ====
-SCORE: -1
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 103 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5198,21 +7893,24 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: What's the current stock price for Uber Technologies, Inc.?
-AI: `command=stock_price;symbol=UBER`
+USER: Turn on the dishwasher.
+AI: I don't know.
+USER: 0
+AI: I don't know.
 
 
 
-EXPERIMENT 188 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 104 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5225,21 +7923,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Find out which company had the highest trading volume on June 5, 2023.
-AI: I'm sorry, but the current API commands do not support retrieving trading volume data for a specific date.
+USER: How's the air quality today?
+AI: I don't know.
 
 
 
-EXPERIMENT 189 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 105 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5252,21 +7951,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Tell me the top 3 stocks in terms of price change on June 7, 2023.
-AI: I'm sorry, but the current API commands do not support retrieving multiple stock prices or sorting them by price change. You can only get the price of a specific stock using the following command: `command=stock_price;symbol={symbol}`. You need to provide the symbol of the stock you are interested in.
+USER: Plan a route for my morning jog.
+AI: I don't know.
 
 
 
-EXPERIMENT 190 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 106 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5279,21 +7979,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Find the stock price of all key companies on June 1, 2023.
-AI: I'm sorry, but the API command for retrieving stock prices can only handle one company at a time. Could you please specify the company you're interested in?
+USER: Turn off the TV.
+AI: I don't know.
 
 
 
-EXPERIMENT 191 ====
-SCORE: 2
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 107 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5306,21 +8007,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Display the stock price of MSFT on June 4, 2023.
-AI: `command=stock_price;symbol=MSFT`
+USER: What's the latest episode of 'The Daily' podcast?
+AI: I don't know.
 
 
 
-EXPERIMENT 192 ====
-SCORE: -1
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 108 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5333,21 +8035,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Find the stock market price of PepsiCo, Inc.
-AI: `command=stock_price;symbol=PEP`
+USER: Call me a taxi.
+AI: I don't know.
 
 
 
-EXPERIMENT 193 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 109 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5360,25 +8063,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Get me the top 5 stocks in the technology sector on June 20, 2023.
-AI: I'm sorry, but the current API commands do not support fetching sector-specific stock information or multiple stocks at once. However, you can use the `stock_price` command to get the price of a specific stock. You would need to know the symbol of the stock you're interested in. Here's how you would use it:
-
-`command=stock_price;symbol={symbol}`
-
-Please replace `{symbol}` with the stock symbol you're interested in.
+USER: Set an alarm for 7 AM tomorrow.
+AI: I'm sorry, but there is no API command available to set an alarm.
 
 
 
-EXPERIMENT 194 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 110 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5391,21 +8091,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Calculate the EPS of Tesla for Q2 2023.
-AI: Sorry, but the provided API commands do not support calculating the EPS (Earnings Per Share) of a specific company for a specific quarter.
+USER: Get me directions to the zoo.
+AI: I don't know.
 
 
 
-EXPERIMENT 195 ====
-SCORE: -1
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 111 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5418,21 +8119,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Kindly fetch the stock price of TSLA.
-AI: `command=stock_price;symbol=TSLA`
+USER: Open the Uber app.
+AI: I don't know.
 
 
 
-EXPERIMENT 196 ====
-SCORE: 2
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 112 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5445,23 +8147,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: What was the market cap for Apple?
-AI: To get the market cap for Apple, you would use the stock_price command with the symbol for Apple, which is AAPL. 
-
-`command=stock_price;symbol=AAPL`
+USER: Set a daily reminder to drink water.
+AI: I'm sorry, but the current API commands do not support setting daily or recurring reminders. You can only set a reminder for a specific date and time.
 
 
 
-EXPERIMENT 197 ====
-SCORE: 2
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 113 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5474,21 +8175,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Retrieve the 52-week low for Microsoft stock.
-AI: `command=stock_price;symbol=MSFT`
+USER: Order Chinese from the nearest restaurant.
+AI: I don't know.
 
 
 
-EXPERIMENT 198 ====
-SCORE: 2
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 114 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5501,21 +8203,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Check the stock price of AMD on September 12, 2023.
-AI: `command=stock_price;symbol=AMD`
+USER: Who won the football game last night?
+AI: I don't know.
 
 
 
-EXPERIMENT 199 ====
-SCORE: -1
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 115 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5528,21 +8231,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Can you provide AMZN stock price?
-AI: `command=stock_price;symbol=AMZN`
+USER: Find the best route to the airport.
+AI: I don't know.
 
 
 
-EXPERIMENT 200 ====
-SCORE: 3
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 116 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5555,21 +8259,22 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: Give me profit margin details for Facebook in June 2023.
-AI: Sorry, but the provided API commands do not support retrieving profit margin details for a specific company.
+USER: Help me find a new job.
+AI: I don't know.
 
 
 
-EXPERIMENT 201 ====
-SCORE: 2
-AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+EXPERIMENT 117 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
 2. command=weather;city={city};country_code={country_code};date={date}
@@ -5582,15 +8287,129 @@ AI: You have the following API commands to answer an user request. Ensure that t
 9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
 10. command=generate_image;text_prompt={text}
 
-To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received.
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
 
 Example:
 User Request: Create a reminder for tomorrow to buy milk in the morning
 
 GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
 
-AI: What was the closing price of GOOGL stock on June 1st, 2023?
-AI: command=stock_price;symbol=GOOGL
+USER: Convert 200 dollars to euros.
+AI: I don't know.
+
+
+
+EXPERIMENT 118 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Make me coffe.
+AI: I don't know.
+
+
+
+EXPERIMENT 119 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: Give motivational quotes.
+AI: I don't know.
+
+
+
+EXPERIMENT 120 ====
+SCORE: 0
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: When's the next basketball game?
+AI: I don't know.
+
+
+
+EXPERIMENT 121 ====
+SCORE: 1
+SYSTEM PROMPT
+You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
+
+1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
+2. command=weather;city={city};country_code={country_code};date={date}
+3. command=get_calendar_events;date={date}
+4. command=create_calendar_event;name={name};date={date};time={time}
+5. command=create_reminder;name={name};date={date};time={time}
+6. command=get_current_date_time;
+7. command=stock_price;symbol={symbol}
+8. command=get_news;country={country};date={date}
+9. command=convert_text_to_speech;text={text};language_code={language_code};gender={gender}
+10. command=generate_image;text_prompt={text}
+
+To use a specific tool, you should ask all necessary questions to gather the required data. Once you have all the data, you should respond with the selected command and input arguments based on the data received. If there is no api command available you should answer "I don't know".
+
+Example:
+User Request: Create a reminder for tomorrow to buy milk in the morning
+
+GPT-4: `command=create_reminder;name=Buy milk;date=2023-04-24;time=9:00`
+
+USER: 
+AI: User Request: Send an email to john.doe@example.com with the subject "Meeting Reminder" and the message "Don't forget about our meeting tomorrow at 10am."
+USER: 1
+AI: `command=SEND_EMAIL;message=Don't forget about our meeting tomorrow at 10am.;subject=Meeting Reminder;recipient_email=john.doe@example.com`
 
 
 
