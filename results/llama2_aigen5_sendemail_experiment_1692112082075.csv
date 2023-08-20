@@ -1,0 +1,20 @@
+llm_model,temperature,system_prompt,user_prompt,score
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 0,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 1,3
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 2,3
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 3,3
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 4,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 5,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 6,1
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 7,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 8,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 9,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 10,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 11,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 12,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 13,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 14,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 15,1
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 16,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 17,2
+upstage/Llama-2-70b-instruct-v2,0,aigenerated_5_oneshot.txt,SEND_EMAIL.txt - 18,2

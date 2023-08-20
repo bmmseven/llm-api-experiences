@@ -1,0 +1,21 @@
+llm_model,temperature,system_prompt,user_prompt,score
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 0,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 1,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 2,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 3,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 4,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 5,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 6,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 7,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 8,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 9,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 10,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 11,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 12,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 13,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 14,2
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 15,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 16,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 17,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 18,1
+upstage/Llama-2-70b-instruct-v2,0,sparksofagi.txt,CONVERT_TEXT_TO_SPEECH.txt - 19,2
