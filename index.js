@@ -10,9 +10,9 @@ import fs from "fs";
 import { ChatOpenAI } from "langchain/chat_models/openai";
 import { ChatGoogleVertexAI } from "langchain/chat_models/googlevertexai";
 import {
-  HumanChatMessage,
-  SystemChatMessage,
-  AIChatMessage,
+  HumanMessage,
+  SystemMessage,
+  AIMessage,
 } from "langchain/schema";
 import dotenv from "dotenv";
 dotenv.config();
@@ -21,6 +21,9 @@ keypress(input);
 //Insert here the inference API url for each model
 const huggingFaceModelsUrls = {
   default: "https://api-inference.huggingface.co/models/",
+  //"upstage/Llama-2-70b-instruct-v2": "https://e7a70gzc47v95t7v.us-east-1.aws.endpoints.huggingface.cloud",
+  "upstage/Llama-2-70b-instruct-v2": "https://e7a70gzc47v95t7v.us-east-1.aws.endpoints.huggingface.cloud",
+  "meta-llama/Llama-2-70b-chat-hf": "https://ig8o8hw0vgcqrtmj.us-east-1.aws.endpoints.huggingface.cloud",
 }
 // Include list of API commands
 
@@ -65,6 +68,7 @@ const modelOptions = [
   "openai/gpt-3.5-turbo-16k-0613",
   "google/palm/chat-bison",
   "upstage/Llama-2-70b-instruct-v2",
+  "meta-llama/Llama-2-70b-chat-hf",
   "stabilityai/stablelm-tuned-alpha-7b", //TODO: Implement this one
   "stabilityai/stablelm-base-alpha-7b", //TODO: Implement this one
 ];
@@ -104,7 +108,7 @@ system = await utils.readFiles("system_prompts/");
 user = await utils.readFiles("user_prompts/");
 
 const systemKeys = Object.keys(system);
-const userKeys = Object.keys(user);
+const userKeys = Object.keys(user).filter((key) => key !== ".DS_Store");
 
 let chatMemory = [];
 let fileReady = false;
@@ -178,13 +182,13 @@ fileStream.once("open", async function (fd) {
         temperature: modelTemperature, // OPTIONAL
         model: modelName.split("/")[2], // OPTIONAL
       })
-    : new ChatOpenAI({
+    : modelName.startsWith("openai/") ? new ChatOpenAI({
         temperature: modelTemperature,
         maxTokens: modelMaxTokens,
         maxRetries: 5,
         modelName: modelName.split("/")[1],
         openAIApiKey: process.env.OPENAI_API_KEY,
-      });
+      }) : null;
 
   console.log("");
   console.log(
@@ -217,8 +221,8 @@ fileStream.once("open", async function (fd) {
       fileStream.write("EXPERIMENT " + experimentIndex + " ====\n");
       let userPrompt = separateUserPrompts[si];
       chatMemory = [
-        new SystemChatMessage(systemPrompt),
-        new HumanChatMessage(userPrompt),
+        new SystemMessage(systemPrompt),
+        new HumanMessage(userPrompt),
       ];
       console.log("USER: " + userPrompt);
       while (!experimentFinished) {
@@ -241,7 +245,7 @@ fileStream.once("open", async function (fd) {
         }
         //console.log(res);
         console.log("> AI: " + res.text);
-        chatMemory.push(new AIChatMessage(res.text));
+        chatMemory.push(new AIMessage(res.text));
         //Save the output to a file, if the experience need additional input from the user, ask it before saving it
         userPrompt = await rl.question("USER: ");
         if (userPrompt == "") {
@@ -260,7 +264,7 @@ fileStream.once("open", async function (fd) {
           console.log("");
           experimentFinished = true;
         } else {
-          chatMemory.push(new HumanChatMessage(userPrompt));
+          chatMemory.push(new HumanMessage(userPrompt));
         }
       }
 
