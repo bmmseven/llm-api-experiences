@@ -6668,7 +6668,7 @@ AI: getEvents("basketball game")
 
 
 EXPERIMENT 301 ====
-SCORE: 
+SCORE: INVALID
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
