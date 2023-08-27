@@ -5935,7 +5935,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 261 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -6355,7 +6355,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 280 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -6553,7 +6553,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 289 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
@@ -6621,7 +6621,7 @@ OTHER: I don't know.
 
 
 EXPERIMENT 292 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
