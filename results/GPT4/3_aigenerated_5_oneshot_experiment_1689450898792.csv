@@ -180,7 +180,7 @@ openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,GET_WEATHER.txt - 17,3
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,GET_WEATHER.txt - 18,3
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,GET_WEATHER.txt - 19,3
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 0,0
-openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 1,3
+openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,GET_WEATHER.txt - 1,3
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 2,0
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 3,0
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 4,0
@@ -261,7 +261,7 @@ openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 78,0
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 79,0
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 80,2
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 81,0
-openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 82,3
+openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 82,2
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 83,0
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 84,0
 openai/gpt-4-0613,0,aigenerated_5_oneshot.txt,NOT_AVAILABLE.txt - 85,0

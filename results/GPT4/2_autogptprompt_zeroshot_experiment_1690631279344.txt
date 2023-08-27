@@ -8598,7 +8598,7 @@ AI: {
 
 
 EXPERIMENT 192 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -8950,7 +8950,7 @@ AI: {
 
 
 EXPERIMENT 200 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9170,7 +9170,7 @@ AI: {
 
 
 EXPERIMENT 205 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9258,7 +9258,7 @@ AI: {
 
 
 EXPERIMENT 207 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9302,7 +9302,7 @@ AI: {
 
 
 EXPERIMENT 208 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9390,7 +9390,7 @@ AI: {
 
 
 EXPERIMENT 210 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9654,7 +9654,7 @@ AI: {
 
 
 EXPERIMENT 216 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9698,7 +9698,7 @@ AI: {
 
 
 EXPERIMENT 217 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9742,7 +9742,7 @@ AI: {
 
 
 EXPERIMENT 218 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -9918,7 +9918,7 @@ AI: {
 
 
 EXPERIMENT 222 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -10094,7 +10094,7 @@ AI: {
 
 
 EXPERIMENT 226 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -10314,7 +10314,7 @@ AI: {
 
 
 EXPERIMENT 231 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -10402,7 +10402,7 @@ AI: {
 
 
 EXPERIMENT 233 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -10490,7 +10490,7 @@ AI: {
 
 
 EXPERIMENT 235 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -10578,7 +10578,7 @@ AI: {
 
 
 EXPERIMENT 237 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -11238,7 +11238,7 @@ AI: {
 
 
 EXPERIMENT 252 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -11765,7 +11765,7 @@ AI: {
 
 
 
-EXPERIMENT 264 ====SCORE: 3
+EXPERIMENT 264 ====SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -11809,7 +11809,7 @@ AI: {
 
 
 EXPERIMENT 265 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -11985,7 +11985,7 @@ AI: {
 
 
 EXPERIMENT 269 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -12073,7 +12073,7 @@ AI: {
 
 
 EXPERIMENT 271 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -12161,7 +12161,7 @@ AI: {
 
 
 EXPERIMENT 273 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -12260,7 +12260,7 @@ AI: {
 
 
 EXPERIMENT 275 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -12304,7 +12304,7 @@ AI: {
 
 
 EXPERIMENT 276 ====
-SCORE: 3
+SCORE: 0
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -12755,7 +12755,7 @@ AI: {
 
 
 EXPERIMENT 286 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -13195,7 +13195,7 @@ AI: {
 
 
 EXPERIMENT 296 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
@@ -13250,7 +13250,7 @@ AI: {
 
 
 EXPERIMENT 297 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>

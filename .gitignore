@@ -1,3 +1,10 @@
 node_modules/
 .env
+<<<<<<< HEAD
 google_key.json.env
+=======
+google_key.json
+.DS_Store
+>>>>>>> 120ab753dd40eb206a6e13434a263bdaca518d51
+.env
+google_key.json

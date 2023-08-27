@@ -6080,7 +6080,7 @@ AI: I'm sorry, but as a bot, I don't have access to real estate databases or per
 
 
 EXPERIMENT 213 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -6164,7 +6164,7 @@ AI: I'm sorry, but I don't have an API command to fetch the largest losers in sh
 
 
 EXPERIMENT 216 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -6220,7 +6220,7 @@ AI: 'The Great Gatsby' was written by F. Scott Fitzgerald.
 
 
 EXPERIMENT 218 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -7312,7 +7312,7 @@ AI: I'm sorry, but as a text-based bot, I don't have the ability to play music o
 
 
 EXPERIMENT 257 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -7432,7 +7432,7 @@ AI: I'm sorry, but I can't assist with that. My current capabilities do not incl
 
 
 EXPERIMENT 261 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -7460,7 +7460,7 @@ AI: To send an email, I need the recipient's email address. Could you please pro
 
 
 EXPERIMENT 262 ====
-SCORE: 3
+SCORE: 0
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -7767,7 +7767,7 @@ AI: I'm sorry, but as a text-based bot, I don't have the capability to play vide
 
 
 EXPERIMENT 273 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -8219,7 +8219,7 @@ AI: I'm sorry for the misunderstanding, but as an AI, I don't have the capabilit
 
 
 EXPERIMENT 289 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 
@@ -8303,7 +8303,7 @@ AI: I'm sorry for the misunderstanding, but as a text-based AI, I don't have the
 
 
 EXPERIMENT 292 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You are a helpful bot that reply to an user. You can use a wide range of APIs to answer an user question. Here are the API commands you can use:
 

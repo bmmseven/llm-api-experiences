@@ -4193,7 +4193,7 @@ AI: I'm sorry, but I don't have the ability to find the closest ATM as it's not 
 
 
 EXPERIMENT 106 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -4445,7 +4445,7 @@ AI: I'm sorry, but I don't have the ability to fetch movie schedules as it's not
 
 
 EXPERIMENT 118 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -4707,7 +4707,7 @@ AI: createReminder("Buy bananas and coffee", getCurrentDateAndTime())
 
 
 EXPERIMENT 130 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -4812,7 +4812,7 @@ AI: I'm sorry, but I don't have the ability to access real estate databases to d
 
 
 EXPERIMENT 135 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -4896,7 +4896,7 @@ AI: I'm sorry, but I don't have access to a function that can retrieve your to-d
 
 
 EXPERIMENT 139 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -5232,7 +5232,7 @@ AI: I'm sorry, but I don't have the ability to provide distance information as i
 
 
 EXPERIMENT 155 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -5316,7 +5316,7 @@ AI: I'm sorry, but I don't have the ability to control Netflix or any other stre
 
 
 EXPERIMENT 159 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -5652,7 +5652,7 @@ AI: I'm sorry, but I don't have the ability to calculate time differences betwee
 
 
 EXPERIMENT 175 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -5749,7 +5749,7 @@ AI: I'm sorry, but I don't have the ability to play music. I can assist with tas
 
 
 EXPERIMENT 179 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -5833,7 +5833,7 @@ AI: I'm sorry, but the available API functions do not provide the ability to fin
 
 
 EXPERIMENT 183 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6055,7 +6055,7 @@ AI: I'm sorry, but the available API functions do not support retrieving sector-
 
 
 EXPERIMENT 193 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6139,7 +6139,7 @@ AI: I'm sorry, but I don't have the ability to find locations or provide directi
 
 
 EXPERIMENT 197 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6202,7 +6202,7 @@ AI: I'm sorry, but the available API functions do not provide the ability to cal
 
 
 EXPERIMENT 200 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6244,7 +6244,7 @@ AI: I'm sorry, but I don't have the ability to order food. I suggest using a foo
 
 
 EXPERIMENT 202 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6439,7 +6439,7 @@ AI: I'm sorry, but I don't have the ability to call a taxi. I can assist with ot
 
 
 EXPERIMENT 211 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6649,7 +6649,7 @@ AI: I'm sorry, but as a text-based AI, I don't have the ability to physically ma
 
 
 EXPERIMENT 221 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
@@ -6670,7 +6670,7 @@ AI: respond("Here are some motivational quotes for you:\n\n1. 'The only way to a
 
 
 EXPERIMENT 222 ====
-SCORE: 3
+SCORE: 2
 SYSTEM PROMPT
 You have the ability to use API commands to answer an user request. To do so, you would need access to the following API functions:<|endofprompt|> 
 1. ‘sendEmail(recipient,subject,message)‘ - this function sends an e-mail with a subject, recipient e-mail and text message.
