@@ -180,7 +180,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 17,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 18,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 19,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 0,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 1,2
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 1,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 2,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 3,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 4,0
@@ -210,7 +210,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 27,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 28,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 29,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 30,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 31,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_CURRENT_STOCK_PRICE.txt - 31,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 32,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 33,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 34,0
@@ -254,7 +254,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 71,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 72,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 73,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 74,2
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 75,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 75,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 76,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 77,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 78,0
@@ -274,7 +274,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 91,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 92,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 93,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 94,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 95,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 95,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 96,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 97,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 98,2
@@ -285,7 +285,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 102,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 103,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 104,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 105,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 106,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_CURRENT_STOCK_PRICE.txt - 106,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 107,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 108,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 109,2
@@ -303,10 +303,10 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 120,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 121,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 122,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 123,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 124,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 124,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 125,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 126,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 127,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_CURRENT_STOCK_PRICE.txt - 127,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 128,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 129,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,SEND_EMAIL.txt - 0,3
