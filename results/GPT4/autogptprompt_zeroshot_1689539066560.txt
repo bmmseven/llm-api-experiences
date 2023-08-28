@@ -7815,7 +7815,7 @@ AI: {
 
 
 EXPERIMENT 177 ====
-SCORE: 3
+SCORE: 2
 AI: Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
 2. create an event in user calendar: create_calendar_event, args: date: <YYYY-MM-DD>, time: <HH:mm>, event_name: <string>
@@ -11212,7 +11212,7 @@ AI: {
 
 
 EXPERIMENT 256 ====
-SCORE: 3
+SCORE: 2
 AI: Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
 2. create an event in user calendar: create_calendar_event, args: date: <YYYY-MM-DD>, time: <HH:mm>, event_name: <string>
@@ -12083,7 +12083,7 @@ AI: {
 
 
 EXPERIMENT 276 ====
-SCORE: 3
+SCORE: 2
 AI: Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
 2. create an event in user calendar: create_calendar_event, args: date: <YYYY-MM-DD>, time: <HH:mm>, event_name: <string>
@@ -13352,7 +13352,7 @@ AI: {
 
 
 EXPERIMENT 305 ====
-SCORE: 3
+SCORE: 0
 AI: Commands:
 1. send an email: SEND_EMAIL, args: email_recipient: <email_address>, subject: <string>, message: <string>
 2. create an event in user calendar: create_calendar_event, args: date: <YYYY-MM-DD>, time: <HH:mm>, event_name: <string>

@@ -5090,7 +5090,7 @@ AI: I'm sorry, but the current API commands do not support retrieving a list of 
 
 
 EXPERIMENT 184 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5148,7 +5148,7 @@ Please replace `{symbol}` with the stock symbol of the company you're interested
 
 
 EXPERIMENT 186 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5175,7 +5175,7 @@ AI: `command=stock_price;symbol=IBM;date=2023-06-25`
 
 
 EXPERIMENT 187 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5287,7 +5287,7 @@ For example, if you're interested in the stock price of Apple Inc., the command 
 
 
 EXPERIMENT 191 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5397,7 +5397,7 @@ AI: It seems like you've selected the third command which is "get_calendar_event
 
 
 EXPERIMENT 195 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5480,7 +5480,7 @@ AI: `command=stock_price;symbol=MSFT`
 
 
 EXPERIMENT 198 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5507,7 +5507,7 @@ AI: `command=stock_price;symbol=AMD`
 
 
 EXPERIMENT 199 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}
@@ -5615,7 +5615,7 @@ AI: Sure, I can help with that. I need some information from you first. Could yo
 
 
 EXPERIMENT 203 ====
-SCORE: 3
+SCORE: 1
 AI: You have the following API commands to answer an user request. Ensure that the input arguments, format, and type are clear and easily parsed by another program performing the API request. Each command should occupy only one line.
 
 1. command=SEND_EMAIL;message={message};subject={subject};recipient_email={recipient_email}

@@ -4286,7 +4286,7 @@ AI: I'm sorry for the misunderstanding, but the available API commands don't sup
 
 
 EXPERIMENT 184 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4326,7 +4326,7 @@ AI: I'm sorry for the confusion, but I can't provide the highest stock price for
 
 
 EXPERIMENT 186 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4350,7 +4350,7 @@ GetStockPrice("IBM");
 
 
 EXPERIMENT 187 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4364,8 +4364,8 @@ AI: You have the following API commands to answer an user request. After detecti
 9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
 10. GenerateImage: GenerateImage(prompt); prompt: string
 
-AI: What's the current stock price for Uber Technologies, Inc.?
-AI: To get the current stock price for Uber Technologies, Inc., I need the stock symbol. Could you please provide it?
+AI: What's yesterday stock price for Uber Technologies, Inc.?
+AI: To get the stock price for Uber Technologies, Inc., I need the stock symbol. Could you please provide it?
 AI: UBER
 AI: Great, with that information, here is the command to get the stock price for Uber Technologies, Inc.:
 
@@ -4454,7 +4454,7 @@ AI: To get the stock price of MSFT on June 4, 2023, I need to use the GetStockPr
 
 
 EXPERIMENT 192 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4468,7 +4468,7 @@ AI: You have the following API commands to answer an user request. After detecti
 9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
 10. GenerateImage: GenerateImage(prompt); prompt: string
 
-AI: Find the stock market price of PepsiCo, Inc.
+AI: Find the stock market price of PepsiCo, Inc. from yesterday
 AI: To find the stock market price of PepsiCo, Inc., I need the stock symbol of the company. Could you please provide it?
 AI: PEP
 AI: Great, now I have all the information needed. Here is the command:
@@ -4518,7 +4518,7 @@ AI: I'm sorry, but none of the available API commands support calculating the EP
 
 
 EXPERIMENT 195 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4532,7 +4532,7 @@ AI: You have the following API commands to answer an user request. After detecti
 9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
 10. GenerateImage: GenerateImage(prompt); prompt: string
 
-AI: Kindly fetch the stock price of TSLA.
+AI: Kindly fetch the stock price of TSLA yesterday.
 AI: Sure, I can help with that. To fetch the stock price, I will use the GetStockPrice API command. Here it is:
 
 GetStockPrice("TSLA");
@@ -4604,7 +4604,7 @@ GetStockPrice("AMD");
 
 
 EXPERIMENT 199 ====
-SCORE: 3
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string
@@ -4618,7 +4618,7 @@ AI: You have the following API commands to answer an user request. After detecti
 9. ConvertTextToSpeech: ConvertTextToSpeech(text,languageCode,gender); text: string; languageCode: string; gender: string;
 10. GenerateImage: GenerateImage(prompt); prompt: string
 
-AI: Can you provide AMZN stock price?
+AI: Can you provide AMZN stock price on September 11, 2023?
 AI: Sure, I can do that. To get the stock price, I will use the GetStockPrice API command. Here is the command with the input argument obtained from you:
 
 GetStockPrice("AMZN")
@@ -4646,7 +4646,7 @@ AI: I'm sorry, but I don't have a specific API command to get profit margin deta
 
 
 EXPERIMENT 201 ====
-SCORE: 0
+SCORE: 2
 AI: You have the following API commands to answer an user request. After detecting their intention, ask the necessary questions to collect the required data for the selected command. Once you have all the data, provide the command with the input arguments obtained from the user.
 
 1. SendEmail: SendEmail(subject, recipient_email, message); subject: string; recipient_email: email; message: string

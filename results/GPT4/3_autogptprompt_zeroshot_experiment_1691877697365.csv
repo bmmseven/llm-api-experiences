@@ -180,7 +180,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 17,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 18,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 19,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 0,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 1,2
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,GET_WEATHER.txt - 1,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 2,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 3,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 4,0
@@ -215,7 +215,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 32,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 33,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 34,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 35,2
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 36,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 36,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 37,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 38,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 39,0
@@ -232,7 +232,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 49,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 50,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 51,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 52,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 53,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 53,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 54,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 55,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 56,2
@@ -269,13 +269,13 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 86,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 87,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 88,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 89,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 90,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 90,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 91,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 92,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 92,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 93,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 94,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 95,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 96,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 96,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 97,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 98,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 99,0
@@ -287,7 +287,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 104,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 105,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 106,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 107,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 108,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 108,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 109,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 110,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 111,2
@@ -297,7 +297,7 @@ openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 114,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 115,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 116,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 117,0
-openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 118,3
+openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 118,2
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,NOT_AVAILABLE.txt - 119,0
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,SEND_EMAIL.txt - 0,3
 openai/gpt-4-0613,0,autogptprompt_zeroshot.txt,SEND_EMAIL.txt - 1,3
